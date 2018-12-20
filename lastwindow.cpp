@@ -30,7 +30,7 @@ LastWindow::~LastWindow()
 }
 
 void LastWindow::paintEvent(QPaintEvent*){//背景图片
-    QPixmap image(":/image/9.png");
+    QPixmap image(":/png/image/9.png");
     QPainter painter(this);
     painter.drawPixmap(0,0,width(),height(),image);
 
@@ -95,22 +95,22 @@ void LastWindow::addlabel_zjk(){
 
 }
 void LastWindow::addgansu(){
-    QPixmap *pixmap = new QPixmap(":/image/gs.png");
+    QPixmap *pixmap = new QPixmap(":/png/image/gs.png");
     ui->gs->setPixmap(*pixmap);
 
 }
 void LastWindow::addchongqing(){
-    QPixmap *pixmap = new QPixmap(":/image/cq.png");
+    QPixmap *pixmap = new QPixmap(":/png/image/cq.png");
     ui->cq->setPixmap(*pixmap);
 
 }
 void LastWindow::addbeijing(){
-    QPixmap *pixmap = new QPixmap(":/image/bj.png");
+    QPixmap *pixmap = new QPixmap(":/png/image/bj.png");
     ui->bj->setPixmap(*pixmap);
 
 }
 void LastWindow::addhebei(){
-    QPixmap *pixmap = new QPixmap(":/image/hb.png");
+    QPixmap *pixmap = new QPixmap(":/png/image/hb.png");
     ui->hb->setPixmap(*pixmap);
 
 }
