@@ -56,6 +56,6 @@ void MainWindow::paintEvent(QPaintEvent *)
 {
     QPainter p;//创建画家对象
     p.begin(this);//指定当前窗口为绘图设备
-    p.drawPixmap(0,0,width(),height(),QPixmap(":/image/8.png"));//画背景图
+    p.drawPixmap(0,0,width(),height(),QPixmap(":/png/image/8.png"));//画背景图
     p.end();
 }
