@@ -25,4 +25,4 @@ FORMS    += mainwindow.ui \
     lastwindow.ui
 
 RESOURCES += \
-    pictures.qrc
+    src.qrc
