@@ -39,8 +39,8 @@
   <widget class="QLabel" name="label_cq">
    <property name="geometry">
     <rect>
-     <x>700</x>
-     <y>540</y>
+     <x>680</x>
+     <y>530</y>
      <width>61</width>
      <height>21</height>
     </rect>
@@ -195,8 +195,8 @@
   <widget class="QLabel" name="gs">
    <property name="geometry">
     <rect>
-     <x>410</x>
-     <y>240</y>
+     <x>357</x>
+     <y>265</y>
      <width>411</width>
      <height>291</height>
     </rect>
@@ -208,10 +208,10 @@
   <widget class="QLabel" name="cq">
    <property name="geometry">
     <rect>
-     <x>660</x>
-     <y>480</y>
-     <width>181</width>
-     <height>161</height>
+     <x>596</x>
+     <y>400</y>
+     <width>185</width>
+     <height>113</height>
     </rect>
    </property>
    <property name="text">
@@ -221,8 +221,8 @@
   <widget class="QLabel" name="bj">
    <property name="geometry">
     <rect>
-     <x>817</x>
-     <y>204</y>
+     <x>830</x>
+     <y>275</y>
      <width>121</width>
      <height>101</height>
     </rect>
@@ -234,10 +234,179 @@
   <widget class="QLabel" name="hb">
    <property name="geometry">
     <rect>
-     <x>785</x>
-     <y>162</y>
+     <x>793</x>
+     <y>238</y>
      <width>171</width>
      <height>221</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hn">
+   <property name="geometry">
+    <rect>
+     <x>727</x>
+     <y>420</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="zj">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>160</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ah">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>370</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="hlj">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>60</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="jl">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>110</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="ln">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>100</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nmg">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>110</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="xj">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>140</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="fj">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>120</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="jx">
+   <property name="geometry">
+    <rect>
+     <x>770</x>
+     <y>551</y>
+     <width>171</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sc">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>320</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="js">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>180</y>
+     <width>121</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="sd">
+   <property name="geometry">
+    <rect>
+     <x>797</x>
+     <y>321</y>
+     <width>181</width>
+     <height>171</height>
     </rect>
    </property>
    <property name="text">
@@ -262,6 +431,19 @@
   <zorder>label_sjz</zorder>
   <zorder>label_zjk</zorder>
   <zorder>label_lz</zorder>
+  <zorder>hn</zorder>
+  <zorder>zj</zorder>
+  <zorder>ah</zorder>
+  <zorder>hlj</zorder>
+  <zorder>jl</zorder>
+  <zorder>ln</zorder>
+  <zorder>nmg</zorder>
+  <zorder>xj</zorder>
+  <zorder>fj</zorder>
+  <zorder>jx</zorder>
+  <zorder>sc</zorder>
+  <zorder>js</zorder>
+  <zorder>sd</zorder>
  </widget>
  <resources/>
  <connections/>

@@ -38,6 +38,19 @@ public:
     QLabel *cq;
     QLabel *bj;
     QLabel *hb;
+    QLabel *hn;
+    QLabel *zj;
+    QLabel *ah;
+    QLabel *hlj;
+    QLabel *jl;
+    QLabel *ln;
+    QLabel *nmg;
+    QLabel *xj;
+    QLabel *fj;
+    QLabel *jx;
+    QLabel *sc;
+    QLabel *js;
+    QLabel *sd;
 
     void setupUi(QDialog *LastWindow)
     {
@@ -52,7 +65,7 @@ public:
         label->setGeometry(QRect(20, 780, 71, 21));
         label_cq = new QLabel(LastWindow);
         label_cq->setObjectName(QString::fromUtf8("label_cq"));
-        label_cq->setGeometry(QRect(700, 540, 61, 21));
+        label_cq->setGeometry(QRect(680, 530, 61, 21));
         label_bj = new QLabel(LastWindow);
         label_bj->setObjectName(QString::fromUtf8("label_bj"));
         label_bj->setGeometry(QRect(840, 320, 54, 12));
@@ -88,16 +101,55 @@ public:
         label_zjk->setGeometry(QRect(800, 340, 54, 16));
         gs = new QLabel(LastWindow);
         gs->setObjectName(QString::fromUtf8("gs"));
-        gs->setGeometry(QRect(410, 240, 411, 291));
+        gs->setGeometry(QRect(357, 265, 411, 291));
         cq = new QLabel(LastWindow);
         cq->setObjectName(QString::fromUtf8("cq"));
-        cq->setGeometry(QRect(660, 480, 181, 161));
+        cq->setGeometry(QRect(596, 400, 185, 113));
         bj = new QLabel(LastWindow);
         bj->setObjectName(QString::fromUtf8("bj"));
-        bj->setGeometry(QRect(817, 204, 121, 101));
+        bj->setGeometry(QRect(830, 275, 121, 101));
         hb = new QLabel(LastWindow);
         hb->setObjectName(QString::fromUtf8("hb"));
-        hb->setGeometry(QRect(785, 162, 171, 221));
+        hb->setGeometry(QRect(793, 238, 171, 221));
+        hn = new QLabel(LastWindow);
+        hn->setObjectName(QString::fromUtf8("hn"));
+        hn->setGeometry(QRect(727, 420, 121, 101));
+        zj = new QLabel(LastWindow);
+        zj->setObjectName(QString::fromUtf8("zj"));
+        zj->setGeometry(QRect(660, 160, 121, 101));
+        ah = new QLabel(LastWindow);
+        ah->setObjectName(QString::fromUtf8("ah"));
+        ah->setGeometry(QRect(650, 370, 121, 101));
+        hlj = new QLabel(LastWindow);
+        hlj->setObjectName(QString::fromUtf8("hlj"));
+        hlj->setGeometry(QRect(190, 60, 121, 101));
+        jl = new QLabel(LastWindow);
+        jl->setObjectName(QString::fromUtf8("jl"));
+        jl->setGeometry(QRect(510, 110, 121, 101));
+        ln = new QLabel(LastWindow);
+        ln->setObjectName(QString::fromUtf8("ln"));
+        ln->setGeometry(QRect(710, 100, 121, 101));
+        nmg = new QLabel(LastWindow);
+        nmg->setObjectName(QString::fromUtf8("nmg"));
+        nmg->setGeometry(QRect(690, 110, 121, 101));
+        xj = new QLabel(LastWindow);
+        xj->setObjectName(QString::fromUtf8("xj"));
+        xj->setGeometry(QRect(910, 140, 121, 101));
+        fj = new QLabel(LastWindow);
+        fj->setObjectName(QString::fromUtf8("fj"));
+        fj->setGeometry(QRect(920, 120, 121, 101));
+        jx = new QLabel(LastWindow);
+        jx->setObjectName(QString::fromUtf8("jx"));
+        jx->setGeometry(QRect(770, 551, 171, 151));
+        sc = new QLabel(LastWindow);
+        sc->setObjectName(QString::fromUtf8("sc"));
+        sc->setGeometry(QRect(860, 320, 121, 101));
+        js = new QLabel(LastWindow);
+        js->setObjectName(QString::fromUtf8("js"));
+        js->setGeometry(QRect(890, 180, 121, 101));
+        sd = new QLabel(LastWindow);
+        sd->setObjectName(QString::fromUtf8("sd"));
+        sd->setGeometry(QRect(797, 321, 181, 171));
         hb->raise();
         bj->raise();
         cq->raise();
@@ -116,6 +168,19 @@ public:
         label_sjz->raise();
         label_zjk->raise();
         label_lz->raise();
+        hn->raise();
+        zj->raise();
+        ah->raise();
+        hlj->raise();
+        jl->raise();
+        ln->raise();
+        nmg->raise();
+        xj->raise();
+        fj->raise();
+        jx->raise();
+        sc->raise();
+        js->raise();
+        sd->raise();
 
         retranslateUi(LastWindow);
 
@@ -142,6 +207,19 @@ public:
         cq->setText(QString());
         bj->setText(QString());
         hb->setText(QString());
+        hn->setText(QString());
+        zj->setText(QString());
+        ah->setText(QString());
+        hlj->setText(QString());
+        jl->setText(QString());
+        ln->setText(QString());
+        nmg->setText(QString());
+        xj->setText(QString());
+        fj->setText(QString());
+        jx->setText(QString());
+        sc->setText(QString());
+        js->setText(QString());
+        sd->setText(QString());
     } // retranslateUi
 
 };

@@ -1,8 +1,6 @@
 #include "lastwindow.h"
 #include "ui_lastwindow.h"
 #include <QPainter>
-
-
 #include <QLabel>
 
 
@@ -12,8 +10,8 @@ LastWindow::LastWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     this->setWindowTitle("足迹地图");
-    this->setMaximumSize(1224,846);
-    this->setMinimumSize(1224,846);
+    this->setMaximumSize(1242,1084);
+    this->setMinimumSize(1242,1084);
     b.setParent(this);
     b.setText("主菜单");
     b.move(1150,10);
@@ -114,6 +112,19 @@ void LastWindow::addhebei(){
     ui->hb->setPixmap(*pixmap);
 
 }
+void LastWindow::addhenan(){
+    QPixmap *pixmap = new QPixmap(":/png/image/hn.png");
+    ui->hn->setPixmap(*pixmap);
+
+}
+void LastWindow::addshandong(){
+    QPixmap *pixmap = new QPixmap(":/png/image/sd.png");
+    ui->sd->setPixmap(*pixmap);
+}
+void LastWindow::addjiangxi(){
+    QPixmap *pixmap = new QPixmap(":/png/image/jx.png");
+    ui->jx->setPixmap(*pixmap);
+}
 void LastWindow::sendSlotclear()
 {
     ui->label_cq->setText("");
@@ -132,4 +143,7 @@ void LastWindow::sendSlotclear()
     ui->cq->clear();
     ui->bj->clear();
     ui->hb->clear();
+    ui->hn->clear();
+    ui->sd->clear();
+    ui->jx->clear();
 }

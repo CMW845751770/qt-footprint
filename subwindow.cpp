@@ -1343,6 +1343,61 @@ void SubWindow::changeWin(){
         l.addlabel_zjk();
         l.addhebei();
     }
+    if(ui->button30->isChecked()==1){
+        l.addName("郑州");
+//        l.addlabel_zjk();
+        l.addhenan();
+    }
+    if(ui->button31->isChecked()==1){
+        l.addName("开封");
+//        l.addlabel_zjk();
+        l.addhenan();
+    }
+    if(ui->button32->isChecked()==1){
+        l.addName("洛阳");
+//        l.addlabel_zjk();
+        l.addhenan();
+    }
+    if(ui->button40->isChecked()==1){
+        l.addName("济南");
+//        l.addlabel_zjk();
+        l.addshandong();
+    }
+    if(ui->button41->isChecked()==1){
+        l.addName("青岛");
+//        l.addlabel_zjk();
+        l.addshandong();
+    }
+    if(ui->button42->isChecked()==1){
+        l.addName("烟台");
+//        l.addlabel_zjk();
+        l.addshandong();
+    }
+    if(ui->button43->isChecked()==1){
+        l.addName("日照");
+//        l.addlabel_zjk();
+        l.addshandong();
+    }
+    if(ui->button50->isChecked()==1){
+        l.addName("南昌");
+//        l.addlabel_zjk();
+        l.addjiangxi();
+    }
+    if(ui->button51->isChecked()==1){
+        l.addName("九江");
+//        l.addlabel_zjk();
+        l.addjiangxi();
+    }
+    if(ui->button52->isChecked()==1){
+        l.addName("上饶");
+//        l.addlabel_zjk();
+        l.addjiangxi();
+    }
+    if(ui->button53->isChecked()==1){
+        l.addName("赣州");
+//        l.addlabel_zjk();
+        l.addjiangxi();
+    }
 
 }
 

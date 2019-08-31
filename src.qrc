@@ -1,6 +1,5 @@
 <RCC>
     <qresource prefix="/png">
-        <file>image/9.png</file>
         <file>image/bj.png</file>
         <file>image/cq.png</file>
         <file>image/gs.png</file>
@@ -14,5 +13,8 @@
         <file>image/while_round.png</file>
         <file>image/while_round_thin.png</file>
         <file>image/lastwindow.jpg</file>
+        <file>image/hn.png</file>
+        <file>image/sd.png</file>
+        <file>image/jx.png</file>
     </qresource>
 </RCC>

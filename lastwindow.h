@@ -39,6 +39,10 @@ public:
     void addchongqing();
     void addbeijing();
     void addhebei();
+    void addhenan();
+    void addshandong();
+    void addjiangxi();
+
 
 
 
