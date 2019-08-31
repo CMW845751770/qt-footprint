@@ -94,10 +94,10 @@ public:
         cq->setGeometry(QRect(660, 480, 181, 161));
         bj = new QLabel(LastWindow);
         bj->setObjectName(QString::fromUtf8("bj"));
-        bj->setGeometry(QRect(850, 270, 121, 101));
+        bj->setGeometry(QRect(817, 204, 121, 101));
         hb = new QLabel(LastWindow);
         hb->setObjectName(QString::fromUtf8("hb"));
-        hb->setGeometry(QRect(820, 230, 171, 221));
+        hb->setGeometry(QRect(785, 162, 171, 221));
         hb->raise();
         bj->raise();
         cq->raise();

@@ -221,8 +221,8 @@
   <widget class="QLabel" name="bj">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>270</y>
+     <x>817</x>
+     <y>204</y>
      <width>121</width>
      <height>101</height>
     </rect>
@@ -234,8 +234,8 @@
   <widget class="QLabel" name="hb">
    <property name="geometry">
     <rect>
-     <x>820</x>
-     <y>230</y>
+     <x>785</x>
+     <y>162</y>
      <width>171</width>
      <height>221</height>
     </rect>
