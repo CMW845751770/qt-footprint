@@ -19,8 +19,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>190</x>
-     <y>50</y>
+     <x>240</x>
+     <y>60</y>
      <width>500</width>
      <height>451</height>
     </rect>
@@ -44,6 +44,9 @@
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="0" column="0">
       <widget class="QCheckBox" name="button00">
+       <property name="styleSheet">
+        <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+       </property>
        <property name="text">
         <string>重庆</string>
        </property>
@@ -139,21 +142,21 @@
    <widget class="QWidget" name="page_3">
     <layout class="QHBoxLayout" name="horizontalLayout_4">
      <item>
-      <widget class="QCheckBox" name="checkBox_7">
+      <widget class="QCheckBox" name="button30">
        <property name="text">
         <string>郑州</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_6">
+      <widget class="QCheckBox" name="button31">
        <property name="text">
         <string>开封</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_8">
+      <widget class="QCheckBox" name="button32">
        <property name="text">
         <string>洛阳</string>
        </property>
@@ -164,28 +167,28 @@
    <widget class="QWidget" name="page_4">
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="QCheckBox" name="checkBox">
+      <widget class="QCheckBox" name="button40">
        <property name="text">
         <string>济南</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_9">
+      <widget class="QCheckBox" name="button41">
        <property name="text">
         <string>青岛</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_10">
+      <widget class="QCheckBox" name="button42">
        <property name="text">
         <string>烟台</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_2">
+      <widget class="QCheckBox" name="button43">
        <property name="text">
         <string>日照</string>
        </property>
@@ -196,28 +199,28 @@
    <widget class="QWidget" name="page_5">
     <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
-      <widget class="QCheckBox" name="checkBox_20">
+      <widget class="QCheckBox" name="button50">
        <property name="text">
         <string>南昌</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QCheckBox" name="checkBox_21">
+      <widget class="QCheckBox" name="button51">
        <property name="text">
         <string>九江</string>
        </property>
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="QCheckBox" name="checkBox_22">
+      <widget class="QCheckBox" name="button52">
        <property name="text">
         <string>上饶</string>
        </property>
       </widget>
      </item>
      <item row="0" column="3">
-      <widget class="QCheckBox" name="checkBox_23">
+      <widget class="QCheckBox" name="button53">
        <property name="text">
         <string>赣州</string>
        </property>
@@ -228,34 +231,205 @@
    <widget class="QWidget" name="page_6">
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="0" column="0">
-      <widget class="QCheckBox" name="checkBox_24">
+      <widget class="QCheckBox" name="button60">
        <property name="text">
         <string>成都</string>
        </property>
       </widget>
      </item>
      <item row="0" column="1">
-      <widget class="QCheckBox" name="checkBox_25">
+      <widget class="QCheckBox" name="button61">
        <property name="text">
         <string>绵阳</string>
        </property>
       </widget>
      </item>
      <item row="0" column="2">
-      <widget class="QCheckBox" name="checkBox_27">
+      <widget class="QCheckBox" name="button62">
        <property name="text">
         <string>自贡</string>
        </property>
       </widget>
      </item>
      <item row="0" column="3">
-      <widget class="QCheckBox" name="checkBox_26">
+      <widget class="QCheckBox" name="button63">
        <property name="text">
         <string>泸州</string>
        </property>
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QWidget" name="page_8">
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QCheckBox" name="button80">
+       <property name="text">
+        <string>南京</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_81">
+       <property name="text">
+        <string>徐州</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="checkBox_82">
+       <property name="text">
+        <string>扬州</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="page_9">
+    <widget class="QCheckBox" name="button90">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>杭州</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_10">
+    <widget class="QCheckBox" name="button100">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>合肥</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_11">
+    <widget class="QCheckBox" name="button110">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>哈尔滨</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_12">
+    <widget class="QCheckBox" name="button120">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>长春</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_13">
+    <widget class="QCheckBox" name="button130">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>本溪</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_14">
+    <widget class="QCheckBox" name="button140">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>呼和浩特</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_15">
+    <widget class="QCheckBox" name="button150">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>乌鲁木齐</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_16">
+    <widget class="QCheckBox" name="button161">
+     <property name="geometry">
+      <rect>
+       <x>173</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>泉州</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="button160">
+     <property name="geometry">
+      <rect>
+       <x>11</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>厦门</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="button162">
+     <property name="geometry">
+      <rect>
+       <x>334</x>
+       <y>216</y>
+       <width>155</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>福州</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QScrollArea" name="scrollArea">
@@ -267,6 +441,9 @@
      <height>531</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/png/image/subwindow.jpg);</string>
+   </property>
    <property name="widgetResizable">
     <bool>true</bool>
    </property>
@@ -275,8 +452,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>142</width>
-      <height>650</height>
+      <width>138</width>
+      <height>575</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
@@ -337,100 +514,58 @@
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_14">
+      <widget class="QPushButton" name="pushButton_12">
        <property name="text">
         <string>浙江</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_15">
+      <widget class="QPushButton" name="pushButton_13">
        <property name="text">
         <string>安徽</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_16">
+      <widget class="QPushButton" name="pushButton_14">
        <property name="text">
         <string>黑龙江</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_12">
+      <widget class="QPushButton" name="pushButton_15">
        <property name="text">
         <string>吉林</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_33">
+      <widget class="QPushButton" name="pushButton_16">
        <property name="text">
         <string>辽宁</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_34">
+      <widget class="QPushButton" name="pushButton_17">
        <property name="text">
         <string>内蒙古</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_35">
+      <widget class="QPushButton" name="pushButton_18">
        <property name="text">
         <string>新疆</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_36">
+      <widget class="QPushButton" name="pushButton_19">
        <property name="text">
-        <string>西藏</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_37">
-       <property name="text">
-        <string>青海</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_38">
-       <property name="text">
-        <string>宁夏</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_39">
-       <property name="text">
-        <string>陕西</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_40">
-       <property name="text">
-        <string>山西</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_41">
-       <property name="text">
-        <string>湖北</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_42">
-       <property name="text">
-        <string>湖南</string>
+        <string>福建</string>
        </property>
       </widget>
      </item>

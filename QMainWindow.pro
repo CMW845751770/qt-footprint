@@ -9,8 +9,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = QMainWindow
 TEMPLATE = app
-
-
+UI_DIR=../qtcreator_Footstepsmap
 SOURCES += main.cpp\
         mainwindow.cpp \
     subwindow.cpp \
@@ -24,5 +23,9 @@ FORMS    += mainwindow.ui \
     subwindow.ui \
     lastwindow.ui
 
+
 RESOURCES += \
     src.qrc
+
+DISTFILES += \
+    image/green_round.png

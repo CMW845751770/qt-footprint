@@ -40,6 +40,12 @@ private:
     QPushButton b;
 
     LastWindow l;
+protected:
+    //重写绘图事件，虚函数
+    //如果在窗口绘图，必须放在绘图事件里实现
+    //绘图事件内部自动调用，窗口需要重绘的时候（状态改变）
+    void paintEvent(QPaintEvent *);
+
 
 };
 

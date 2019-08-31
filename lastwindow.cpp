@@ -11,7 +11,7 @@ LastWindow::LastWindow(QWidget *parent) :
     ui(new Ui::LastWindow)
 {
     ui->setupUi(this);
-    this->setWindowTitle("最终窗口");
+    this->setWindowTitle("足迹地图");
     this->setMaximumSize(1224,846);
     this->setMinimumSize(1224,846);
     b.setParent(this);
@@ -30,7 +30,7 @@ LastWindow::~LastWindow()
 }
 
 void LastWindow::paintEvent(QPaintEvent*){//背景图片
-    QPixmap image(":/png/image/9.png");
+    QPixmap image(":/png/image/lastwindow.jpg");
     QPainter painter(this);
     painter.drawPixmap(0,0,width(),height(),image);
 

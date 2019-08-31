@@ -1,10 +1,18 @@
 <RCC>
     <qresource prefix="/png">
-        <file>image/8.png</file>
         <file>image/9.png</file>
         <file>image/bj.png</file>
         <file>image/cq.png</file>
         <file>image/gs.png</file>
         <file>image/hb.png</file>
+        <file>../../../QQ/data/845751770/FileRecv/MobileFile/IMG_2281.PNG</file>
+        <file>image/main.PNG</file>
+        <file>image/subwindow.jpg</file>
+        <file>image/subwindow.png</file>
+        <file>image/green_round.png</file>
+        <file>image/red_round.png</file>
+        <file>image/while_round.png</file>
+        <file>image/while_round_thin.png</file>
+        <file>image/lastwindow.jpg</file>
     </qresource>
 </RCC>
