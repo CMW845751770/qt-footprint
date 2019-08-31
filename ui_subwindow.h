@@ -71,8 +71,8 @@ public:
     QWidget *page_8;
     QHBoxLayout *horizontalLayout_9;
     QCheckBox *button80;
-    QCheckBox *checkBox_81;
-    QCheckBox *checkBox_82;
+    QCheckBox *button81;
+    QCheckBox *button82;
     QWidget *page_9;
     QCheckBox *button90;
     QWidget *page_10;
@@ -302,15 +302,15 @@ public:
 
         horizontalLayout_9->addWidget(button80);
 
-        checkBox_81 = new QCheckBox(page_8);
-        checkBox_81->setObjectName(QString::fromUtf8("checkBox_81"));
+        button81 = new QCheckBox(page_8);
+        button81->setObjectName(QString::fromUtf8("button81"));
 
-        horizontalLayout_9->addWidget(checkBox_81);
+        horizontalLayout_9->addWidget(button81);
 
-        checkBox_82 = new QCheckBox(page_8);
-        checkBox_82->setObjectName(QString::fromUtf8("checkBox_82"));
+        button82 = new QCheckBox(page_8);
+        button82->setObjectName(QString::fromUtf8("button82"));
 
-        horizontalLayout_9->addWidget(checkBox_82);
+        horizontalLayout_9->addWidget(button82);
 
         stackedWidget->addWidget(page_8);
         page_9 = new QWidget();
@@ -498,8 +498,8 @@ public:
         button62->setText(QCoreApplication::translate("SubWindow", "\350\207\252\350\264\241", nullptr));
         button63->setText(QCoreApplication::translate("SubWindow", "\346\263\270\345\267\236", nullptr));
         button80->setText(QCoreApplication::translate("SubWindow", "\345\215\227\344\272\254", nullptr));
-        checkBox_81->setText(QCoreApplication::translate("SubWindow", "\345\276\220\345\267\236", nullptr));
-        checkBox_82->setText(QCoreApplication::translate("SubWindow", "\346\211\254\345\267\236", nullptr));
+        button81->setText(QCoreApplication::translate("SubWindow", "\345\276\220\345\267\236", nullptr));
+        button82->setText(QCoreApplication::translate("SubWindow", "\346\211\254\345\267\236", nullptr));
         button90->setText(QCoreApplication::translate("SubWindow", "\346\235\255\345\267\236", nullptr));
         button100->setText(QCoreApplication::translate("SubWindow", "\345\220\210\350\202\245", nullptr));
         button110->setText(QCoreApplication::translate("SubWindow", "\345\223\210\345\260\224\346\273\250", nullptr));

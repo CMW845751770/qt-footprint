@@ -16,5 +16,17 @@
         <file>image/hn.png</file>
         <file>image/sd.png</file>
         <file>image/jx.png</file>
+        <file>image/sc.png</file>
+        <file>image/js.png</file>
+        <file>image/zj.png</file>
+        <file>image/ah.png</file>
+        <file>image/hlj.png</file>
+        <file>image/jl.png</file>
+        <file>image/ln.png</file>
+        <file>image/nmg.png</file>
+        <file>image/xj.png</file>
+        <file>image/sh.png</file>
+        <file>image/tj.png</file>
+        <file>image/fj.png</file>
     </qresource>
 </RCC>

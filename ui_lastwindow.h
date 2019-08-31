@@ -51,6 +51,8 @@ public:
     QLabel *sc;
     QLabel *js;
     QLabel *sd;
+    QLabel *sh;
+    QLabel *tj;
 
     void setupUi(QDialog *LastWindow)
     {
@@ -104,7 +106,7 @@ public:
         gs->setGeometry(QRect(357, 265, 411, 291));
         cq = new QLabel(LastWindow);
         cq->setObjectName(QString::fromUtf8("cq"));
-        cq->setGeometry(QRect(596, 400, 185, 113));
+        cq->setGeometry(QRect(596, 489, 185, 113));
         bj = new QLabel(LastWindow);
         bj->setObjectName(QString::fromUtf8("bj"));
         bj->setGeometry(QRect(830, 275, 121, 101));
@@ -116,40 +118,46 @@ public:
         hn->setGeometry(QRect(727, 420, 121, 101));
         zj = new QLabel(LastWindow);
         zj->setObjectName(QString::fromUtf8("zj"));
-        zj->setGeometry(QRect(660, 160, 121, 101));
+        zj->setGeometry(QRect(878, 490, 181, 161));
         ah = new QLabel(LastWindow);
         ah->setObjectName(QString::fromUtf8("ah"));
-        ah->setGeometry(QRect(650, 370, 121, 101));
+        ah->setGeometry(QRect(775, 398, 151, 181));
         hlj = new QLabel(LastWindow);
         hlj->setObjectName(QString::fromUtf8("hlj"));
-        hlj->setGeometry(QRect(190, 60, 121, 101));
+        hlj->setGeometry(QRect(859, -20, 411, 311));
         jl = new QLabel(LastWindow);
         jl->setObjectName(QString::fromUtf8("jl"));
-        jl->setGeometry(QRect(510, 110, 121, 101));
+        jl->setGeometry(QRect(937, 151, 251, 185));
         ln = new QLabel(LastWindow);
         ln->setObjectName(QString::fromUtf8("ln"));
-        ln->setGeometry(QRect(710, 100, 121, 101));
+        ln->setGeometry(QRect(890, 191, 201, 201));
         nmg = new QLabel(LastWindow);
         nmg->setObjectName(QString::fromUtf8("nmg"));
-        nmg->setGeometry(QRect(690, 110, 121, 101));
+        nmg->setGeometry(QRect(470, 27, 921, 411));
         xj = new QLabel(LastWindow);
         xj->setObjectName(QString::fromUtf8("xj"));
-        xj->setGeometry(QRect(910, 140, 121, 101));
+        xj->setGeometry(QRect(9, 83, 491, 421));
         fj = new QLabel(LastWindow);
         fj->setObjectName(QString::fromUtf8("fj"));
-        fj->setGeometry(QRect(920, 120, 121, 101));
+        fj->setGeometry(QRect(803, 586, 141, 131));
         jx = new QLabel(LastWindow);
         jx->setObjectName(QString::fromUtf8("jx"));
         jx->setGeometry(QRect(770, 551, 171, 151));
         sc = new QLabel(LastWindow);
         sc->setObjectName(QString::fromUtf8("sc"));
-        sc->setGeometry(QRect(860, 320, 121, 101));
+        sc->setGeometry(QRect(470, 455, 221, 201));
         js = new QLabel(LastWindow);
         js->setObjectName(QString::fromUtf8("js"));
-        js->setGeometry(QRect(890, 180, 121, 101));
+        js->setGeometry(QRect(823, 426, 151, 141));
         sd = new QLabel(LastWindow);
         sd->setObjectName(QString::fromUtf8("sd"));
         sd->setGeometry(QRect(797, 321, 181, 171));
+        sh = new QLabel(LastWindow);
+        sh->setObjectName(QString::fromUtf8("sh"));
+        sh->setGeometry(QRect(930, 482, 121, 101));
+        tj = new QLabel(LastWindow);
+        tj->setObjectName(QString::fromUtf8("tj"));
+        tj->setGeometry(QRect(837, 297, 161, 101));
         hb->raise();
         bj->raise();
         cq->raise();
@@ -181,6 +189,8 @@ public:
         sc->raise();
         js->raise();
         sd->raise();
+        sh->raise();
+        tj->raise();
 
         retranslateUi(LastWindow);
 
@@ -220,6 +230,8 @@ public:
         sc->setText(QString());
         js->setText(QString());
         sd->setText(QString());
+        sh->setText(QString());
+        tj->setText(QString());
     } // retranslateUi
 
 };

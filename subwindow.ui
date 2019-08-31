@@ -270,14 +270,14 @@
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_81">
+      <widget class="QCheckBox" name="button81">
        <property name="text">
         <string>徐州</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QCheckBox" name="checkBox_82">
+      <widget class="QCheckBox" name="button82">
        <property name="text">
         <string>扬州</string>
        </property>

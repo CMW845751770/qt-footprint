@@ -42,7 +42,18 @@ public:
     void addhenan();
     void addshandong();
     void addjiangxi();
-
+    void addsichuan();
+    void addjiangsu();
+    void addzhejiang();
+    void addanhui();
+    void addheilongjiang();
+    void addjilin();
+    void addliaoning();
+    void addneimenggu();
+    void addxinjiang();
+    void addshanghai();
+    void addtianjin();
+    void addfujian();
 
 
 

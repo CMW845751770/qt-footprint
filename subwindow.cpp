@@ -618,6 +618,48 @@ SubWindow::SubWindow(QWidget *parent) :
                 "        image: url(:/png/image/green_round.png);"
                " }"
                                  ) ;
+    ui->button81->setStyleSheet(
+               " QCheckBox{"
+                "        spacing: 15px;"
+               " }"
+               " QCheckBox::indicator {"
+                       " width: 17px;"
+                      "  height: 17px;"
+                "}"
+                "QCheckBox::indicator:unenabled:unchecked {"
+                "        image: url(:/png/image/while_round_thin.png);"
+                "}"
+                "QCheckBox::indicator:unenabled:checked {"
+                "        image: url(:/png/image/red_round.png);"
+                "}"
+               " QCheckBox::indicator:enabled:unchecked {"
+                "        image: url(:/png/image/while_round.png);"
+                "}"
+               " QCheckBox::indicator:enabled:checked {"
+                "        image: url(:/png/image/green_round.png);"
+               " }"
+                                 ) ;
+    ui->button82->setStyleSheet(
+               " QCheckBox{"
+                "        spacing: 15px;"
+               " }"
+               " QCheckBox::indicator {"
+                       " width: 17px;"
+                      "  height: 17px;"
+                "}"
+                "QCheckBox::indicator:unenabled:unchecked {"
+                "        image: url(:/png/image/while_round_thin.png);"
+                "}"
+                "QCheckBox::indicator:unenabled:checked {"
+                "        image: url(:/png/image/red_round.png);"
+                "}"
+               " QCheckBox::indicator:enabled:unchecked {"
+                "        image: url(:/png/image/while_round.png);"
+                "}"
+               " QCheckBox::indicator:enabled:checked {"
+                "        image: url(:/png/image/green_round.png);"
+               " }"
+                                 ) ;
     ui->button90->setStyleSheet(
                " QCheckBox{"
                 "        spacing: 15px;"
@@ -1398,7 +1440,101 @@ void SubWindow::changeWin(){
 //        l.addlabel_zjk();
         l.addjiangxi();
     }
-
+    if(ui->button60->isChecked()==1){
+        l.addName("成都");
+//        l.addlabel_zjk();
+        l.addsichuan();
+    }
+    if(ui->button61->isChecked()==1){
+        l.addName("绵阳");
+//        l.addlabel_zjk();
+        l.addsichuan();
+    }
+    if(ui->button62->isChecked()==1){
+        l.addName("自贡");
+//        l.addlabel_zjk();
+        l.addsichuan();
+    }
+    if(ui->button63->isChecked()==1){
+        l.addName("泸州");
+//        l.addlabel_zjk();
+        l.addsichuan();
+    }
+    if(ui->button80->isChecked()==1){
+        l.addName("南京");
+//        l.addlabel_zjk();
+        l.addjiangsu();
+    }
+    if(ui->button81->isChecked()==1){
+        l.addName("徐州");
+//        l.addlabel_zjk();
+        l.addjiangsu();
+    }
+    if(ui->button82->isChecked()==1){
+        l.addName("扬州");
+//        l.addlabel_zjk();
+        l.addjiangsu();
+    }
+    if(ui->button90->isChecked()==1){
+        l.addName("杭州");
+//        l.addlabel_zjk();
+        l.addzhejiang();
+    }
+    if(ui->button100->isChecked()==1){
+        l.addName("合肥");
+//        l.addlabel_zjk();
+        l.addanhui();
+    }
+    if(ui->button110->isChecked()==1){
+        l.addName("哈尔滨");
+//        l.addlabel_zjk();
+        l.addheilongjiang();
+    }
+    if(ui->button120->isChecked()==1){
+        l.addName("长春");
+//        l.addlabel_zjk();
+        l.addjilin();
+    }
+    if(ui->button130->isChecked()==1){
+        l.addName("本溪");
+//        l.addlabel_zjk();
+        l.addliaoning();
+    }
+    if(ui->button140->isChecked()==1){
+        l.addName("呼和浩特");
+//        l.addlabel_zjk();
+        l.addneimenggu();
+    }
+    if(ui->button150->isChecked()==1){
+        l.addName("乌鲁木齐");
+//        l.addlabel_zjk();
+        l.addxinjiang();
+    }
+    if(ui->button03->isChecked()==1){
+        l.addName("上海");
+//        l.addlabel_zjk();
+        l.addshanghai();
+    }
+    if(ui->button05->isChecked()==1){
+        l.addName("天津");
+//        l.addlabel_zjk();
+        l.addtianjin();
+    }
+    if(ui->button160->isChecked()==1){
+        l.addName("厦门");
+//        l.addlabel_zjk();
+        l.addfujian();
+    }
+    if(ui->button161->isChecked()==1){
+        l.addName("泉州");
+//        l.addlabel_zjk();
+        l.addfujian();
+    }
+    if(ui->button162->isChecked()==1){
+        l.addName("福州");
+//        l.addlabel_zjk();
+        l.addfujian();
+    }
 }
 
 void SubWindow::switchPage(){

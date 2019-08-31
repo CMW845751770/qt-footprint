@@ -125,6 +125,54 @@ void LastWindow::addjiangxi(){
     QPixmap *pixmap = new QPixmap(":/png/image/jx.png");
     ui->jx->setPixmap(*pixmap);
 }
+void LastWindow::addsichuan(){
+    QPixmap *pixmap = new QPixmap(":/png/image/sc.png");
+    ui->sc->setPixmap(*pixmap);
+}
+void LastWindow::addjiangsu(){
+    QPixmap *pixmap = new QPixmap(":/png/image/js.png");
+    ui->js->setPixmap(*pixmap);
+}
+void LastWindow::addzhejiang(){
+    QPixmap *pixmap = new QPixmap(":/png/image/zj.png");
+    ui->zj->setPixmap(*pixmap);
+}
+void LastWindow::addanhui(){
+    QPixmap *pixmap = new QPixmap(":/png/image/ah.png");
+    ui->ah->setPixmap(*pixmap);
+}
+void LastWindow::addheilongjiang(){
+    QPixmap *pixmap = new QPixmap(":/png/image/hlj.png");
+    ui->hlj->setPixmap(*pixmap);
+}
+void LastWindow::addjilin(){
+    QPixmap *pixmap = new QPixmap(":/png/image/jl.png");
+    ui->jl->setPixmap(*pixmap);
+}
+void LastWindow::addliaoning(){
+    QPixmap *pixmap = new QPixmap(":/png/image/ln.png");
+    ui->ln->setPixmap(*pixmap);
+}
+void LastWindow::addneimenggu(){
+    QPixmap *pixmap = new QPixmap(":/png/image/nmg.png");
+    ui->nmg->setPixmap(*pixmap);
+}
+void LastWindow::addxinjiang(){
+    QPixmap *pixmap = new QPixmap(":/png/image/xj.png");
+    ui->xj->setPixmap(*pixmap);
+}
+void LastWindow::addshanghai(){
+    QPixmap *pixmap = new QPixmap(":/png/image/sh.png");
+    ui->sh->setPixmap(*pixmap);
+}
+void LastWindow::addtianjin(){
+    QPixmap *pixmap = new QPixmap(":/png/image/tj.png");
+    ui->tj->setPixmap(*pixmap);
+}
+void LastWindow::addfujian(){
+    QPixmap *pixmap = new QPixmap(":/png/image/fj.png");
+    ui->fj->setPixmap(*pixmap);
+}
 void LastWindow::sendSlotclear()
 {
     ui->label_cq->setText("");
@@ -146,4 +194,16 @@ void LastWindow::sendSlotclear()
     ui->hn->clear();
     ui->sd->clear();
     ui->jx->clear();
+    ui->sc->clear();
+    ui->js->clear();
+    ui->zj->clear();
+    ui->ah->clear();
+    ui->hlj->clear();
+    ui->jl->clear();
+    ui->ln->clear();
+    ui->nmg->clear();
+    ui->xj->clear();
+    ui->sh->clear();
+    ui->tj->clear();
+    ui->fj->clear();
 }
