@@ -34,8 +34,6 @@ void LastWindow::paintEvent(QPaintEvent*){//背景图片
 
 }
 
-
-
 void LastWindow::sendSlot(){
     emit mySignal1();
     ui->textBrowser->setText("");
@@ -92,6 +90,93 @@ void LastWindow::addlabel_zjk(){
     ui->label_zjk->setText("张家口 *");
 
 }
+void LastWindow::addlabel_zz(){
+    ui->label_zz->setText("郑州 *");
+
+}
+void LastWindow::addlabel_kf(){
+    ui->label_kf->setText("开封 *");
+
+}
+void LastWindow::addlabel_ly(){
+    ui->label_ly->setText("洛阳 *");
+}
+void LastWindow::addlabel_jn(){
+    ui->label_jn->setText("济南 *");
+}
+void LastWindow::addlabel_qd(){
+    ui->label_qd->setText("青岛 *");
+}
+void LastWindow::addlabel_yt(){
+    ui->label_yt->setText("烟台 *");
+}
+void LastWindow::addlabel_rz(){
+    ui->label_rz->setText("日照 *");
+}
+void LastWindow::addlabel_nc(){
+    ui->label_nc->setText("南昌 *");
+}
+void LastWindow::addlabel_jj(){
+    ui->label_jj->setText("九江 *");
+}
+void LastWindow::addlabel_sr(){
+    ui->label_sr->setText("上饶 *");
+}
+void LastWindow::addlabel_gz(){
+    ui->label_gz->setText("赣州 *");
+}
+void LastWindow::addlabel_cd(){
+    ui->label_cd->setText("成都 *");
+}
+void LastWindow::addlabel_my(){
+    ui->label_my->setText("绵阳 *");
+}
+void LastWindow::addlabel_zg(){
+    ui->label_zg->setText("自贡 *");
+}
+void LastWindow::addlabel_luzhou(){
+    ui->label_luzhou->setText("泸州 *");
+}
+void LastWindow::addlabel_nj(){
+    ui->label_nj->setText("南京 *");
+}
+void LastWindow::addlabel_xz(){
+    ui->label_xz->setText("徐州 *");
+}
+void LastWindow::addlabel_yz(){
+    ui->label_yz->setText("扬州 *");
+}
+void LastWindow::addlabel_hz(){
+    ui->label_hz->setText("杭州 *");
+}
+void LastWindow::addlabel_hf(){
+    ui->label_hf->setText("合肥 *");
+}
+void LastWindow::addlabel_heb(){
+    ui->label_heb->setText("哈尔滨 *");
+}
+void LastWindow::addlabel_cc(){
+    ui->label_cc->setText("长春 *");
+}
+void LastWindow::addlabel_bx(){
+    ui->label_bx->setText("本溪 *");
+}
+void LastWindow::addlabel_hhht(){
+    ui->label_hhht->setText("呼和浩特 *");
+}
+void LastWindow::addlabel_wlmq(){
+    ui->label_wlmq->setText("乌鲁木齐 *");
+}
+void LastWindow::addlabel_xm(){
+    ui->label_xm->setText("厦门 *");
+}
+void LastWindow::addlabel_qz(){
+    ui->label_qz->setText("泉州 *");
+}
+void LastWindow::addlabel_fz(){
+    ui->label_fz->setText("福州 *");
+}
+//省
 void LastWindow::addgansu(){
     QPixmap *pixmap = new QPixmap(":/png/image/gs.png");
     ui->gs->setPixmap(*pixmap);
@@ -187,6 +272,34 @@ void LastWindow::sendSlotclear()
     ui->label_sjz->setText("");
     ui->label_ts->setText("");
     ui->label_zjk->setText("");
+    ui->label_zz->setText("");
+    ui->label_kf->setText("");
+    ui->label_ly->setText("");
+    ui->label_jn->setText("");
+    ui->label_qd->setText("");
+    ui->label_yt->setText("");
+    ui->label_rz->setText("");
+    ui->label_nc->setText("");
+    ui->label_jj->setText("");
+    ui->label_sr->setText("");
+    ui->label_gz->setText("");
+    ui->label_cd->setText("");
+    ui->label_my->setText("");
+    ui->label_zg->setText("");
+    ui->label_luzhou->setText("");
+    ui->label_nj->setText("");
+    ui->label_xz->setText("");
+    ui->label_yz->setText("");
+    ui->label_hz->setText("");
+    ui->label_heb->setText("");
+    ui->label_cc->setText("");
+    ui->label_bx->setText("");
+    ui->label_hhht->setText("");
+    ui->label_wlmq->setText("");
+    ui->label_xm->setText("");
+    ui->label_qz->setText("");
+    ui->label_fz->setText("");
+    ui->label_hf->setText("");
     ui->gs->clear();
     ui->cq->clear();
     ui->bj->clear();
