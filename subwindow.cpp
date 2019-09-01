@@ -1333,208 +1333,242 @@ void SubWindow::changeWin(){
         l.addName("重庆");
         l.addlabel_cq();
         l.addchongqing();
+        resultCityCount ++ ;
     }
     if(ui->button01->isChecked()==1){
         l.addName("北京");
         l.addlabel_bj();
         l.addbeijing();
+        resultCityCount ++ ;
     }
     if(ui->button02->isChecked()==1){
         l.addName("香港");
         l.addlabel_xg();
-    }
-    if(ui->button03->isChecked()==1){
-        l.addName("上海");
-        l.addlabel_sh();
+        resultCityCount ++ ;
     }
     if(ui->button04->isChecked()==1){
         l.addName("澳门");
         l.addlabel_am();
-    }
-    if(ui->button05->isChecked()==1){
-        l.addName("天津");
-        l.addlabel_tj();
+        resultCityCount ++ ;
     }
     if(ui->button10->isChecked()==1){
         l.addName("兰州");
         l.addlabel_lz();
         l.addgansu();
+        resultCityCount ++ ;
     }
     if(ui->button11->isChecked()==1){
         l.addName("白银");
         l.addlabel_by();
         l.addgansu();
+        resultCityCount ++ ;
     }
     if(ui->button12->isChecked()==1){
         l.addName("敦煌");
         l.addlabel_dh();
         l.addgansu();
+        resultCityCount ++ ;
     }
     if(ui->button20->isChecked()==1){
         l.addName("石家庄");
         l.addlabel_sjz();
         l.addhebei();
+        resultCityCount ++ ;
     }
     if(ui->button21->isChecked()==1){
         l.addName("唐山");
         l.addlabel_ts();
         l.addhebei();
+        resultCityCount ++ ;
     }
     if(ui->button22->isChecked()==1){
         l.addName("张家口");
         l.addlabel_zjk();
         l.addhebei();
+        resultCityCount ++ ;
     }
     if(ui->button30->isChecked()==1){
         l.addName("郑州");
         l.addlabel_zz();
         l.addhenan();
+        resultCityCount ++ ;
     }
     if(ui->button31->isChecked()==1){
         l.addName("开封");
         l.addlabel_kf();
         l.addhenan();
+        resultCityCount ++ ;
     }
     if(ui->button32->isChecked()==1){
         l.addName("洛阳");
         l.addlabel_ly();
         l.addhenan();
+        resultCityCount ++ ;
     }
     if(ui->button40->isChecked()==1){
         l.addName("济南");
         l.addlabel_jn();
         l.addshandong();
+        resultCityCount ++ ;
     }
     if(ui->button41->isChecked()==1){
         l.addName("青岛");
         l.addlabel_qd();
         l.addshandong();
+        resultCityCount ++ ;
     }
     if(ui->button42->isChecked()==1){
         l.addName("烟台");
         l.addlabel_yt();
         l.addshandong();
+        resultCityCount ++ ;
     }
     if(ui->button43->isChecked()==1){
         l.addName("日照");
         l.addlabel_rz();
         l.addshandong();
+        resultCityCount ++ ;
     }
     if(ui->button50->isChecked()==1){
         l.addName("南昌");
         l.addlabel_nc();
         l.addjiangxi();
+        resultCityCount ++ ;
     }
     if(ui->button51->isChecked()==1){
         l.addName("九江");
         l.addlabel_jj();
         l.addjiangxi();
+        resultCityCount ++ ;
     }
     if(ui->button52->isChecked()==1){
         l.addName("上饶");
         l.addlabel_sr();
         l.addjiangxi();
+        resultCityCount ++ ;
     }
     if(ui->button53->isChecked()==1){
         l.addName("赣州");
         l.addlabel_gz();
         l.addjiangxi();
+        resultCityCount ++ ;
     }
     if(ui->button60->isChecked()==1){
         l.addName("成都");
         l.addlabel_cd();
         l.addsichuan();
+        resultCityCount ++ ;
     }
     if(ui->button61->isChecked()==1){
         l.addName("绵阳");
         l.addlabel_my();
         l.addsichuan();
+        resultCityCount ++ ;
     }
     if(ui->button62->isChecked()==1){
         l.addName("自贡");
         l.addlabel_zg();
         l.addsichuan();
+        resultCityCount ++ ;
     }
     if(ui->button63->isChecked()==1){
         l.addName("泸州");
         l.addlabel_luzhou();
         l.addsichuan();
+        resultCityCount ++ ;
     }
     if(ui->button80->isChecked()==1){
         l.addName("南京");
         l.addlabel_nj();
         l.addjiangsu();
+        resultCityCount ++ ;
     }
     if(ui->button81->isChecked()==1){
         l.addName("徐州");
         l.addlabel_xz();
         l.addjiangsu();
+        resultCityCount ++ ;
     }
     if(ui->button82->isChecked()==1){
         l.addName("扬州");
         l.addlabel_yz();
         l.addjiangsu();
+        resultCityCount ++ ;
     }
     if(ui->button90->isChecked()==1){
         l.addName("杭州");
         l.addlabel_hz();
         l.addzhejiang();
+        resultCityCount ++ ;
     }
     if(ui->button100->isChecked()==1){
         l.addName("合肥");
         l.addlabel_hf();
         l.addanhui();
+        resultCityCount ++ ;
     }
     if(ui->button110->isChecked()==1){
         l.addName("哈尔滨");
         l.addlabel_heb();
         l.addheilongjiang();
+        resultCityCount ++ ;
     }
     if(ui->button120->isChecked()==1){
         l.addName("长春");
         l.addlabel_cc();
         l.addjilin();
+        resultCityCount ++ ;
     }
     if(ui->button130->isChecked()==1){
         l.addName("本溪");
         l.addlabel_bx();
         l.addliaoning();
+        resultCityCount ++ ;
     }
     if(ui->button140->isChecked()==1){
         l.addName("呼和浩特");
         l.addlabel_hhht();
         l.addneimenggu();
+        resultCityCount ++ ;
     }
     if(ui->button150->isChecked()==1){
         l.addName("乌鲁木齐");
         l.addlabel_wlmq();
         l.addxinjiang();
+        resultCityCount ++ ;
     }
     if(ui->button03->isChecked()==1){
         l.addName("上海");
         l.addlabel_sh();
         l.addshanghai();
+        resultCityCount ++ ;
     }
     if(ui->button05->isChecked()==1){
         l.addName("天津");
         l.addlabel_tj();
         l.addtianjin();
+        resultCityCount ++ ;
     }
     if(ui->button160->isChecked()==1){
         l.addName("厦门");
         l.addlabel_xm();
         l.addfujian();
+        resultCityCount ++ ;
     }
     if(ui->button161->isChecked()==1){
         l.addName("泉州");
         l.addlabel_qz();
         l.addfujian();
+        resultCityCount ++ ;
     }
     if(ui->button162->isChecked()==1){
         l.addName("福州");
         l.addlabel_fz();
         l.addfujian();
+        resultCityCount ++ ;
     }
+    l.getResultCities(resultCityCount) ;
+    resultCityCount = 0 ;
 }
 
 void SubWindow::switchPage(){

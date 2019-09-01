@@ -60,7 +60,6 @@ void LastWindow::addlabel_am(){
 }
 void LastWindow::addlabel_sh(){
     ui->label_sh->setText("上海 *");
-
 }
 void LastWindow::addlabel_tj(){
     ui->label_tj->setText("天津 *");
@@ -258,6 +257,13 @@ void LastWindow::addfujian(){
     QPixmap *pixmap = new QPixmap(":/png/image/fj.png");
     ui->fj->setPixmap(*pixmap);
 }
+
+//计算用户踏足的城市并显示在label中
+void LastWindow::getResultCities(int cityCount){
+    QString str = QString::number(cityCount);
+    ui->result->setText("你踏足了中国"+str+"个城市\r\n 超越了很多用户") ;
+}
+
 void LastWindow::sendSlotclear()
 {
     ui->label_cq->setText("");

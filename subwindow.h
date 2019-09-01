@@ -26,7 +26,7 @@ public:
     void switchPage();//切换函数
     void changeWin();
     void dealLast();
-
+    int resultCityCount = 0 ;
 signals:
     /*型号必须有signals关键字声明
      * 没有返回值，但可以有参数

@@ -81,6 +81,7 @@ public:
     QLabel *label_fz;
     QLabel *label_hz;
     QLabel *label_hf;
+    QLabel *result;
 
     void setupUi(QDialog *LastWindow)
     {
@@ -270,6 +271,9 @@ public:
         label_hf = new QLabel(LastWindow);
         label_hf->setObjectName(QString::fromUtf8("label_hf"));
         label_hf->setGeometry(QRect(850, 520, 51, 16));
+        result = new QLabel(LastWindow);
+        result->setObjectName(QString::fromUtf8("result"));
+        result->setGeometry(QRect(540, 40, 361, 111));
         hb->raise();
         bj->raise();
         cq->raise();
@@ -331,6 +335,7 @@ public:
         label_fz->raise();
         label_hz->raise();
         label_hf->raise();
+        result->raise();
 
         retranslateUi(LastWindow);
 
@@ -400,6 +405,7 @@ public:
         label_fz->setText(QString());
         label_hz->setText(QString());
         label_hf->setText(QString());
+        result->setText(QString());
     } // retranslateUi
 
 };

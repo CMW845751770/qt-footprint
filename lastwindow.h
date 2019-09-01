@@ -21,6 +21,7 @@ public:
     void sendSlot();
     void addName(QString);
     void sendSlotclear();
+    void getResultCities(int cityCount);
 
     void addlabel_cq();//市
     void addlabel_bj();
