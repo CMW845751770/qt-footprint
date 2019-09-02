@@ -116,6 +116,78 @@ public:
         if (SubWindow->objectName().isEmpty())
             SubWindow->setObjectName(QString::fromUtf8("SubWindow"));
         SubWindow->resize(737, 531);
+        SubWindow->setStyleSheet(QString::fromUtf8("QScrollBar:vertical\n"
+"{\n"
+"    margin:30px 0px 30px 0px;\n"
+"    background-color:#0bb4b5;\n"
+"    border: 0px;\n"
+"    width:30px;    \n"
+"}\n"
+"QScrollBar::handle:vertical\n"
+"{\n"
+"    background-color:#1ca9b3;\n"
+"    width:30px;\n"
+"    border-radius:7px;\n"
+"}\n"
+"QScrollBar::handle:vertical:hover\n"
+"{\n"
+"    background-color:#0bb4b5;\n"
+"    width:30px;\n"
+"    border-radius:7px;\n"
+"}\n"
+"QScrollBar::add-line:vertical\n"
+"{\n"
+"    subcontrol-origin: margin;\n"
+"    border:1px solid rgb(240,241,239);\n"
+"    height:30px;\n"
+"}\n"
+"\n"
+"QScrollBar::sub-line:vertical\n"
+"{\n"
+"   subcontrol-origin: margin;\n"
+"    border:1px solid rgb(240,241,239);\n"
+"    height:30px;\n"
+"}\n"
+"QScrollBar::add-page:vertical\n"
+"{\n"
+"  background-color:rgb(240,241,239);\n"
+"}\n"
+"\n"
+"QScrollBar::sub-page:vertical\n"
+"{\n"
+"    background-color:rgb(240,241,239); \n"
+"}\n"
+"QScrollBar::up-arrow:vertical\n"
+"{\n"
+"  border:0px;\n"
+"  width:30px;\n"
+"  height:30px;\n"
+"  border-image:url(\":/Icons/up_Arrow.png\");\n"
+""
+                        "}\n"
+"\n"
+"QScrollBar::up-arrow:vertical:pressed\n"
+"{\n"
+"    border:0px;\n"
+"    width:30px;\n"
+"    height:30px;\n"
+"    border-image:url(\":/Icons/up_Arrow_down.png\");\n"
+"}\n"
+"QScrollBar::down-arrow:vertical\n"
+"{\n"
+"    border:0px;\n"
+"    width:30px;\n"
+"    height:30px;\n"
+"    border-image:url(\":/Icons/down_Arrow.png\");\n"
+"}\n"
+"\n"
+"QScrollBar::down-arrow:vertical:pressed \n"
+"{\n"
+"    border:0px;\n"
+"    width:30px;\n"
+"    height:30px;\n"
+"    border-image:url(\":/Icons/down_Arrow_down.png\");\n"
+"}"));
         stackedWidget = new QStackedWidget(SubWindow);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
         stackedWidget->setEnabled(true);
@@ -374,7 +446,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 138, 575));
+        scrollAreaWidgetContents->setGeometry(QRect(0, -33, 129, 575));
         verticalLayout = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         button0 = new QPushButton(scrollAreaWidgetContents);
