@@ -1,8 +1,15 @@
+
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QMessageBox>
 #include<QPainter>
 #include<QPushButton>
-
+#include "mainwindow.h"
+#include <QApplication>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <iostream>
+#include <QDebug>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -80,7 +87,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(&b2,&QPushButton::released,this,&MainWindow::changeWin);
 
     //处理子窗口的信号
-    connect(&w,&SubWindow::mySignal,this,&MainWindow::dealLast);
+//    connect(&w,&SubWindow::mySignal,this,&MainWindow::dealLast);
 
 }
 
@@ -89,17 +96,76 @@ MainWindow::~MainWindow()
     delete ui;
 }
 void MainWindow::changeWin(){
+    //登录校验
+    QSqlDatabase db = QSqlDatabase::addDatabase("QODBC");
+    db.setHostName("127.0.0.1");
+    db.setPort(3306);
+    db.setDatabaseName("footprint");
+    db.setUserName("root");
+    db.setPassword("root");
+    if (!db.open()){
+        printf("failed to connect to the database") ;
+       QMessageBox::information(NULL,"亲","服务挂了，等会再试试？") ;
+       return;
+     }
+    else
+       printf("successfully connected to the database") ;
+    //接收用户名密码
+    QString username = ui->username->text() ;
+    qDebug()<<username<<endl ;
+    if(username == "" || username== NULL){
+        QMessageBox::information(NULL,"亲","用户名不能为空哦！") ;
+        return;
+    }
+    QString password = ui->password->text() ;
+    qDebug()<<password<<endl ;
+    if(password == "" || password== NULL){
+        QMessageBox::information(NULL,"亲","密码不能为空哦！") ;
+        return;
+    }
+    //判断用户名是否存在
+    QSqlQuery query;
+       //执行sql
+    query.prepare("select count(1) from footprint_user where username = ?") ;
+    query.addBindValue(username) ;
+    query.exec() ;
+    int usernameResultCount = 0;
+    while(query.next()){
+        usernameResultCount = query.value(0).toInt() ;
+    }
+    qDebug()<<usernameResultCount<<endl ;
+    if(!(usernameResultCount > 0)){
+        QMessageBox::information(NULL,"亲","用户名是不是输错了？") ;
+        return;
+    }
+    QSqlQuery query2;
+    //根据用户名和密码查询用户
+    query2.prepare("select id,username,password,city_count as cityCount, create_time as createTime ,update_time as updateTime from footprint_user where username = ? and password = ?") ;
+    query2.addBindValue(username) ;
+    query2.addBindValue(password) ;
+    query2.exec() ;
+    while(query2.next()){
+        user = new User() ;
+        user->setId(query2.value(0).toInt()) ;
+        user->setUsername(query2.value(1).toString()) ;
+        user->setPassword(query2.value(2).toString()) ;
+        user->setCityCount(query2.value(3).toInt()) ;
+        user->setCreateTime(query2.value(4).toDateTime()) ;
+        user->setUpdateTime(query2.value(5).toDateTime()) ;
+    }
+    qDebug()<<user<<endl ;
+    if(user == NULL){
+        QMessageBox::information(NULL,"抱歉","密码错误") ;
+        return;
+    }
+    qDebug()<<"id :" <<user->getId()<<"username : "<<user->getUsername()<<"password : "<<user->getPassword()
+                        <<"ciyCount : "<<user->getCityCount()<<"createTime :"<<user->getCreateTime()<<"updateTime : "<<user->getUpdateTime()<<endl ;
     //子窗口显示
     w.show();
     //本窗口隐藏
     this->hide();
 }
 
-void MainWindow::dealLast(){
-    //主窗口显示
-    this->show();
-
-}
 void MainWindow::paintEvent(QPaintEvent *)
 {
     QPainter p;//创建画家对象

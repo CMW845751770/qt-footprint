@@ -18,7 +18,7 @@ class LastWindow : public QDialog
 public:
     explicit LastWindow(QWidget *parent = 0);
     ~LastWindow();
-    void sendSlot();
+
     void addName(QString);
     void sendSlotclear();
     void getResultCities(int cityCount);
@@ -93,7 +93,7 @@ protected:
     void paintEvent(QPaintEvent *);
 
 private slots:
-
+    void sendSlot();
 
 
 private:

@@ -1318,9 +1318,7 @@ SubWindow::~SubWindow()
 void SubWindow::dealLast(){
     //最终窗口隐藏
     l.hide();
-    emit mySignal();
-
-
+    this->show();
 }
 void SubWindow::changeWin(){
     //子窗口显示

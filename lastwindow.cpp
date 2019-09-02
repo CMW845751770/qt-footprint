@@ -1,4 +1,5 @@
 #include "lastwindow.h"
+#include "mainwindow.h"
 #include "ui_lastwindow.h"
 #include <QPainter>
 #include <QLabel>
