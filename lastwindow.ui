@@ -22,18 +22,8 @@
      <height>71</height>
     </rect>
    </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>780</y>
-     <width>71</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>去过的城市：</string>
+   <property name="styleSheet">
+    <string notr="true">font: 87 9pt &quot;Arial&quot;;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_cq">
@@ -821,7 +811,6 @@
   <zorder>cq</zorder>
   <zorder>gs</zorder>
   <zorder>textBrowser</zorder>
-  <zorder>label</zorder>
   <zorder>label_cq</zorder>
   <zorder>label_bj</zorder>
   <zorder>label_xg</zorder>

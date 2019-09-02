@@ -21,7 +21,6 @@ class Ui_LastWindow
 {
 public:
     QTextBrowser *textBrowser;
-    QLabel *label;
     QLabel *label_cq;
     QLabel *label_bj;
     QLabel *label_xg;
@@ -91,9 +90,7 @@ public:
         textBrowser = new QTextBrowser(LastWindow);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
         textBrowser->setGeometry(QRect(100, 760, 256, 71));
-        label = new QLabel(LastWindow);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(20, 780, 71, 21));
+        textBrowser->setStyleSheet(QString::fromUtf8("font: 87 9pt \"Arial\";"));
         label_cq = new QLabel(LastWindow);
         label_cq->setObjectName(QString::fromUtf8("label_cq"));
         label_cq->setGeometry(QRect(680, 530, 61, 21));
@@ -279,7 +276,6 @@ public:
         cq->raise();
         gs->raise();
         textBrowser->raise();
-        label->raise();
         label_cq->raise();
         label_bj->raise();
         label_xg->raise();
@@ -345,7 +341,6 @@ public:
     void retranslateUi(QDialog *LastWindow)
     {
         LastWindow->setWindowTitle(QCoreApplication::translate("LastWindow", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("LastWindow", "\345\216\273\350\277\207\347\232\204\345\237\216\345\270\202\357\274\232", nullptr));
         label_cq->setText(QString());
         label_bj->setText(QString());
         label_xg->setText(QString());

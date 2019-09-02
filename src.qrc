@@ -28,5 +28,7 @@
         <file>image/sh.png</file>
         <file>image/tj.png</file>
         <file>image/fj.png</file>
+        <file>image/cityCount.jpg</file>
+        <file>image/userRate.png</file>
     </qresource>
 </RCC>

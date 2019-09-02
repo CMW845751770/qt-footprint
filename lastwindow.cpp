@@ -12,14 +12,39 @@ LastWindow::LastWindow(QWidget *parent) :
     this->setWindowTitle("足迹地图");
     this->setMaximumSize(1242,1084);
     this->setMinimumSize(1242,1084);
+    b.setStyleSheet(
+                //正常状态样式
+                                  "QPushButton{"
+                                  "background-color:green;"//背景色（也可以设置图片）
+                                  "border-width:4px;"                     //边框宽度像素
+                                  "border-radius:10px;"                   //边框圆角半径像素
+                                  "border-color:rgba(255,255,255,30);"    //边框颜色
+                                  "font:bold 15px;"                       //字体，字体大小
+                                  "color:white;"                //字体颜色
+                                  "padding:6px;"                          //填衬
+                                  "}"
+                                  //鼠标按下样式
+                                  "QPushButton:pressed{"
+                                  "background-color:rgba(100,255,100,200);"
+                                  "border-color:rgba(255,255,255,30);"
+                                  "border-style:inset;"
+                                  "color:rgba(0,0,0,100);"
+                                  "}"
+                                  );
     b.setParent(this);
     b.setText("主菜单");
     b.move(1150,10);
-    b.resize(50,30);
+    b.resize(80,30);
+    //设置label的字体样式
+    //设置textBrowser为无边框背景透明字体为黑体
+    ui->textBrowser->setStyleSheet("QTextBrowser{border-width:0;border-style:outset}") ;
+    ui->textBrowser->viewport()->setAutoFillBackground(false);
+    QFont font2 ( "Microsoft YaHei",  10,   80);
+    ui->textBrowser->setFont(font2) ;
+    //设置result label的字体样式
+    ui->result->setStyleSheet("background-color: rgb(250, 0, 0);font-size:60px;color:blue");
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlot);//发射信号回上一窗口
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlotclear);//点击主菜单，清空
-
-
 
 }
 LastWindow::~LastWindow()
