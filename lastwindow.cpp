@@ -287,9 +287,9 @@ void LastWindow::addfujian(){
 //计算用户踏足的城市并显示在label中
 void LastWindow::getResultCities(int cityCount){
     QString str = QString::number(cityCount);
-    ui->result->setText("你踏足了中国"+str+"个城市\r\n 超越了很多用户") ;
+    QString username = MainWindow::user->getUsername() ;
+    ui->result->setText(username+"你踏足了中国"+str+"个城市\r\n 超越了很多用户") ;
 }
-
 void LastWindow::sendSlotclear()
 {
     ui->label_cq->setText("");

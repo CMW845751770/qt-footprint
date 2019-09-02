@@ -10,6 +10,8 @@
 #include <QSqlQuery>
 #include <iostream>
 #include <QDebug>
+
+User* MainWindow::user = NULL ;
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -160,6 +162,7 @@ void MainWindow::changeWin(){
     }
     qDebug()<<"id :" <<user->getId()<<"username : "<<user->getUsername()<<"password : "<<user->getPassword()
                         <<"ciyCount : "<<user->getCityCount()<<"createTime :"<<user->getCreateTime()<<"updateTime : "<<user->getUpdateTime()<<endl ;
+
     //子窗口显示
     w.show();
     //本窗口隐藏

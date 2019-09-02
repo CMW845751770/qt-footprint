@@ -19,7 +19,8 @@ RC_ICONS = favicon.ico
 RC_FILE = logo.rc
 HEADERS  += mainwindow.h \
     subwindow.h \
-    lastwindow.h
+    lastwindow.h \
+    usercontainer.h
 
 FORMS    += mainwindow.ui \
     subwindow.ui \

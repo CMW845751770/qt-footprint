@@ -1,6 +1,8 @@
 #ifndef LASTWINDOW_H
 #define LASTWINDOW_H
 
+#include "user.cpp"
+
 #include <QDialog>
 
 #include <QMainWindow>
@@ -18,11 +20,9 @@ class LastWindow : public QDialog
 public:
     explicit LastWindow(QWidget *parent = 0);
     ~LastWindow();
-
     void addName(QString);
     void sendSlotclear();
     void getResultCities(int cityCount);
-
     void addlabel_cq();//市
     void addlabel_bj();
     void addlabel_xg();

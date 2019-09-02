@@ -4,8 +4,8 @@
 
 #include <QMainWindow>
 #include <QPushButton>
-#include "subwindow.h"//子窗口头文件
-#include "user.cpp"
+#include "subwindow.h"//子窗口头文
+#include "usercontainer.h"
 
 namespace Ui {
 class MainWindow;
@@ -21,7 +21,7 @@ public:
       void changeWin();
 //    void dealSub();
 //    void dealLast();
-      User* user = NULL;
+      static User* user ;
 
     //void closeEvent (QCloseEvent *e);
 protected:

@@ -21,7 +21,6 @@ class SubWindow : public QDialog
 public:
     explicit SubWindow(QWidget *parent = 0);
     ~SubWindow();
-
     //QString sh;
     void switchPage();//切换函数
     void changeWin();
