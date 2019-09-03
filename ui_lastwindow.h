@@ -83,6 +83,8 @@ public:
     QLabel *cityCount;
     QLabel *userRate;
     QLabel *username;
+    QLabel *count;
+    QLabel *rate;
 
     void setupUi(QDialog *LastWindow)
     {
@@ -275,11 +277,18 @@ public:
         cityCount->setGeometry(QRect(430, 70, 391, 91));
         userRate = new QLabel(LastWindow);
         userRate->setObjectName(QString::fromUtf8("userRate"));
-        userRate->setGeometry(QRect(430, 91, 371, 161));
+        userRate->setGeometry(QRect(430, 71, 371, 161));
         username = new QLabel(LastWindow);
         username->setObjectName(QString::fromUtf8("username"));
         username->setGeometry(QRect(430, 0, 371, 81));
         username->setAlignment(Qt::AlignCenter);
+        count = new QLabel(LastWindow);
+        count->setObjectName(QString::fromUtf8("count"));
+        count->setGeometry(QRect(630, 70, 51, 91));
+        count->setAlignment(Qt::AlignCenter);
+        rate = new QLabel(LastWindow);
+        rate->setObjectName(QString::fromUtf8("rate"));
+        rate->setGeometry(QRect(490, 70, 121, 161));
         hb->raise();
         bj->raise();
         cq->raise();
@@ -343,6 +352,8 @@ public:
         cityCount->raise();
         userRate->raise();
         username->raise();
+        count->raise();
+        rate->raise();
 
         retranslateUi(LastWindow);
 
@@ -414,6 +425,8 @@ public:
         cityCount->setText(QString());
         userRate->setText(QString());
         username->setText(QString());
+        count->setText(QString());
+        rate->setText(QString());
     } // retranslateUi
 
 };

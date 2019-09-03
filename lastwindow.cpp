@@ -3,6 +3,8 @@
 #include "ui_lastwindow.h"
 #include <QPainter>
 #include <QLabel>
+#include <QSqlQuery>
+#include <QDebug>
 
 LastWindow::LastWindow(QWidget *parent) :
     QDialog(parent),
@@ -44,6 +46,18 @@ LastWindow::LastWindow(QWidget *parent) :
     ui->cityCount->setStyleSheet("QLabel{border-image: url(:/png/image/cityCount.jpg);}") ;
     ui->userRate->setStyleSheet("QLabel{border-image: url(:/png/image/userRate.png);}") ;
     ui->username->setStyleSheet("QLabel{border-image: url(:/png/image/subwindow.jpg);}") ;
+    QFont font3 ( "Microsoft YaHei", 30, 80,false);
+    ui->username->setFont(font3) ;
+    QPalette pa;
+    pa.setColor(QPalette::WindowText,Qt::yellow);
+    ui->username->setPalette(pa);
+    //设置count和rate
+    ui->count->setStyleSheet("QLabel{border-image: url(:/png/image/subwindow.jpg);}")  ;
+    ui->count->setFont(font3) ;
+    ui->count->setPalette(pa);
+    ui->rate->setStyleSheet("QLabel{border-image: url(:/png/image/subwindow.jpg);}")  ;
+    ui->rate->setFont(font3) ;
+    ui->rate->setPalette(pa);
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlot);//发射信号回上一窗口
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlotclear);//点击主菜单，清空
 
@@ -288,6 +302,38 @@ void LastWindow::getResultCities(int cityCount){
     QString str = QString::number(cityCount);
     QString username = MainWindow::user->getUsername() ;
     ui->username->setText(username) ;
+    ui->count->setText(str) ;
+    //更新用户city_count字段
+    QSqlQuery query;
+    //更具用户名更新city_count
+    query.prepare("update footprint_user set city_count = ? where username = ?") ;
+    query.addBindValue(cityCount) ;
+    query.addBindValue(username) ;
+    query.exec() ;
+    //查询出city_count比此用户少的用户个数以及所有用户的个数最后得到rate比率
+    int totalUserCount = -1 ;
+    int lessCityCountUserCount = -1 ;
+    QSqlQuery query2;
+    //更具用户名更新city_count
+    query2.prepare("select count(1) from footprint_user") ;
+    query2.exec() ;
+    while(query2.next()){
+        totalUserCount = query2.value(0).toInt() ;
+    }
+    QSqlQuery query3;
+    //更具用户名更新city_count
+    query3.prepare("select count(1) from footprint_user where city_count < ?") ;
+    query3.addBindValue(cityCount) ;
+    query3.exec() ;
+    while(query3.next()){
+        lessCityCountUserCount = query3.value(0).toInt() ;
+    }
+    double rate = lessCityCountUserCount/((double)totalUserCount) ;
+    qDebug()<<"rate:"<<rate<<endl ;
+    QString userRate = QString::number ( rate * 100, 'g',  3 ) + "%" ;
+    qDebug()<<"rateStr:"<<userRate<<endl ;
+    ui->rate
+
 }
 void LastWindow::sendSlotclear()
 {
