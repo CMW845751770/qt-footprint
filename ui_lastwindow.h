@@ -288,7 +288,7 @@ public:
         count->setAlignment(Qt::AlignCenter);
         rate = new QLabel(LastWindow);
         rate->setObjectName(QString::fromUtf8("rate"));
-        rate->setGeometry(QRect(572, 155, 95, 121));
+        rate->setGeometry(QRect(572, 155, 90, 121));
         hb->raise();
         bj->raise();
         cq->raise();

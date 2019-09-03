@@ -323,13 +323,18 @@ void LastWindow::getResultCities(int cityCount){
     }
     QSqlQuery query3;
     //更具用户名更新city_count
-    query3.prepare("select count(1) from footprint_user where city_count <= ?") ;
+    query3.prepare("select count(1) from footprint_user where city_count < ?") ;
     query3.addBindValue(cityCount) ;
     query3.exec() ;
     while(query3.next()){
         lessCityCountUserCount = query3.value(0).toInt() ;
     }
-    double rate = lessCityCountUserCount/((double)totalUserCount) ;
+    double rate = -1 ;
+    if(lessCityCountUserCount == totalUserCount -1 ){
+        rate = 1 ;
+    }else{
+        rate = lessCityCountUserCount/((double)totalUserCount) ;
+    }
     qDebug()<<"rate:"<<rate<<endl ;
     QString userRate = QString::number ( rate * 100, 'g',  3 ) + "%" ;
     qDebug()<<"rateStr:"<<userRate<<endl ;
