@@ -1,6 +1,5 @@
 #ifndef USERCONTAINER_H
 #define USERCONTAINER_H
-#include "user.cpp"
 
 #include <QDate>
 #include <QString>

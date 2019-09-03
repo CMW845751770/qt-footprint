@@ -793,17 +793,46 @@
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="result">
+  <widget class="QLabel" name="cityCount">
    <property name="geometry">
     <rect>
-     <x>540</x>
-     <y>40</y>
-     <width>361</width>
-     <height>111</height>
+     <x>430</x>
+     <y>70</y>
+     <width>391</width>
+     <height>91</height>
     </rect>
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="userRate">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>91</y>
+     <width>371</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>0</y>
+     <width>371</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
    </property>
   </widget>
   <zorder>hb</zorder>
@@ -866,7 +895,9 @@
   <zorder>label_fz</zorder>
   <zorder>label_hz</zorder>
   <zorder>label_hf</zorder>
-  <zorder>result</zorder>
+  <zorder>cityCount</zorder>
+  <zorder>userRate</zorder>
+  <zorder>username</zorder>
  </widget>
  <resources/>
  <connections/>

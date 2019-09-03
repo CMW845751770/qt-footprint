@@ -87,10 +87,28 @@ MainWindow::MainWindow(QWidget *parent) :
                                   "}");
     //w.show();
     connect(&b2,&QPushButton::released,this,&MainWindow::changeWin);
-
-    //处理子窗口的信号
-//    connect(&w,&SubWindow::mySignal,this,&MainWindow::dealLast);
-
+    //设置label的字体
+    QFont font2 ( "Microsoft YaHei",  10,   80);
+    ui->usernameLabel->setFont(font2);
+    ui->passwordLabel->setFont(font2);
+    ui->password->setEchoMode(QLineEdit::Password);
+    //设置lineEdit样式
+    ui->username->setContextMenuPolicy(Qt::NoContextMenu);//设置无右键菜单
+    ui->password->setContextMenuPolicy(Qt::NoContextMenu);//设置无右键菜单
+    ui->username->setStyleSheet("QLineEdit{"
+                                "background:transparent ;"
+                                "border-color:rgba(255,255,255,200);"
+                                "border-style:outset;"                  //边框样式
+                                "border-width:2px;"                     //边框宽度像素
+                                "border-radius:10px;}"                   //边框圆角半径像素"
+                                );
+    ui->password->setStyleSheet("QLineEdit{"
+                                "background:transparent ;"
+                                "border-color:rgba(255,255,255,200);"
+                                "border-style:outset;"                  //边框样式
+                                "border-width:2px;"                     //边框宽度像素
+                                "border-radius:10px;}"                   //边框圆角半径像素"
+                                );
 }
 
 MainWindow::~MainWindow()
@@ -99,19 +117,6 @@ MainWindow::~MainWindow()
 }
 void MainWindow::changeWin(){
     //登录校验
-    QSqlDatabase db = QSqlDatabase::addDatabase("QODBC");
-    db.setHostName("127.0.0.1");
-    db.setPort(3306);
-    db.setDatabaseName("footprint");
-    db.setUserName("root");
-    db.setPassword("root");
-    if (!db.open()){
-        printf("failed to connect to the database") ;
-       QMessageBox::information(NULL,"亲","服务挂了，等会再试试？") ;
-       return;
-     }
-    else
-       printf("successfully connected to the database") ;
     //接收用户名密码
     QString username = ui->username->text() ;
     qDebug()<<username<<endl ;

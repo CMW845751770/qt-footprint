@@ -44,10 +44,10 @@ public:
         password->setGeometry(QRect(250, 270, 201, 31));
         usernameLabel = new QLabel(centralWidget);
         usernameLabel->setObjectName(QString::fromUtf8("usernameLabel"));
-        usernameLabel->setGeometry(QRect(160, 220, 72, 15));
+        usernameLabel->setGeometry(QRect(160, 210, 72, 15));
         passwordLabel = new QLabel(centralWidget);
         passwordLabel->setObjectName(QString::fromUtf8("passwordLabel"));
-        passwordLabel->setGeometry(QRect(160, 270, 72, 15));
+        passwordLabel->setGeometry(QRect(160, 280, 72, 15));
         MainWindow->setCentralWidget(centralWidget);
         statusBar = new QStatusBar(MainWindow);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));

@@ -1,10 +1,6 @@
 #ifndef LASTWINDOW_H
 #define LASTWINDOW_H
-
-#include "user.cpp"
-
 #include <QDialog>
-
 #include <QMainWindow>
 #include <QPushButton>
 #include <QPainter>

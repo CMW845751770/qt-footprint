@@ -4,7 +4,6 @@
 #include <QPainter>
 #include <QLabel>
 
-
 LastWindow::LastWindow(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::LastWindow)
@@ -33,7 +32,7 @@ LastWindow::LastWindow(QWidget *parent) :
                                   "}"
                                   );
     b.setParent(this);
-    b.setText("主菜单");
+    b.setText("返回");
     b.move(1150,10);
     b.resize(80,30);
     //设置label的字体样式
@@ -42,8 +41,9 @@ LastWindow::LastWindow(QWidget *parent) :
     ui->textBrowser->viewport()->setAutoFillBackground(false);
     QFont font2 ( "Microsoft YaHei",  10,   80);
     ui->textBrowser->setFont(font2) ;
-    //设置result label的字体样式
-    ui->result->setStyleSheet("background-color: rgb(250, 0, 0);font-size:60px;color:blue");
+    ui->cityCount->setStyleSheet("QLabel{border-image: url(:/png/image/cityCount.jpg);}") ;
+    ui->userRate->setStyleSheet("QLabel{border-image: url(:/png/image/userRate.png);}") ;
+    ui->username->setStyleSheet("QLabel{border-image: url(:/png/image/subwindow.jpg);}") ;
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlot);//发射信号回上一窗口
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlotclear);//点击主菜单，清空
 
@@ -59,7 +59,6 @@ void LastWindow::paintEvent(QPaintEvent*){//背景图片
     painter.drawPixmap(0,0,width(),height(),image);
 
 }
-
 void LastWindow::sendSlot(){
     emit mySignal1();
     ui->textBrowser->setText("");
@@ -288,7 +287,7 @@ void LastWindow::addfujian(){
 void LastWindow::getResultCities(int cityCount){
     QString str = QString::number(cityCount);
     QString username = MainWindow::user->getUsername() ;
-    ui->result->setText(username+"你踏足了中国"+str+"个城市\r\n 超越了很多用户") ;
+    ui->username->setText(username) ;
 }
 void LastWindow::sendSlotclear()
 {
