@@ -284,11 +284,11 @@ public:
         username->setAlignment(Qt::AlignCenter);
         count = new QLabel(LastWindow);
         count->setObjectName(QString::fromUtf8("count"));
-        count->setGeometry(QRect(630, 70, 51, 91));
+        count->setGeometry(QRect(630, 75, 51, 91));
         count->setAlignment(Qt::AlignCenter);
         rate = new QLabel(LastWindow);
         rate->setObjectName(QString::fromUtf8("rate"));
-        rate->setGeometry(QRect(490, 70, 121, 161));
+        rate->setGeometry(QRect(572, 155, 95, 121));
         hb->raise();
         bj->raise();
         cq->raise();

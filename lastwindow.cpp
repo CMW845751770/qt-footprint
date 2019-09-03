@@ -55,8 +55,9 @@ LastWindow::LastWindow(QWidget *parent) :
     ui->count->setStyleSheet("QLabel{border-image: url(:/png/image/subwindow.jpg);}")  ;
     ui->count->setFont(font3) ;
     ui->count->setPalette(pa);
+    QFont font4 ( "Microsoft YaHei", 15, 80,false);
     ui->rate->setStyleSheet("QLabel{border-image: url(:/png/image/subwindow.jpg);}")  ;
-    ui->rate->setFont(font3) ;
+    ui->rate->setFont(font4) ;
     ui->rate->setPalette(pa);
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlot);//发射信号回上一窗口
     connect(&b,&QPushButton::clicked,this,&LastWindow::sendSlotclear);//点击主菜单，清空
@@ -322,7 +323,7 @@ void LastWindow::getResultCities(int cityCount){
     }
     QSqlQuery query3;
     //更具用户名更新city_count
-    query3.prepare("select count(1) from footprint_user where city_count < ?") ;
+    query3.prepare("select count(1) from footprint_user where city_count <= ?") ;
     query3.addBindValue(cityCount) ;
     query3.exec() ;
     while(query3.next()){
@@ -332,7 +333,7 @@ void LastWindow::getResultCities(int cityCount){
     qDebug()<<"rate:"<<rate<<endl ;
     QString userRate = QString::number ( rate * 100, 'g',  3 ) + "%" ;
     qDebug()<<"rateStr:"<<userRate<<endl ;
-    ui->rate
+    ui->rate->setText(userRate) ;
 
 }
 void LastWindow::sendSlotclear()
