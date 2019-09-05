@@ -29,12 +29,12 @@ public:
     QStackedWidget *stackedWidget;
     QWidget *page_7;
     QGridLayout *gridLayout_3;
-    QCheckBox *button00;
-    QCheckBox *button01;
-    QCheckBox *button02;
     QCheckBox *button03;
-    QCheckBox *button04;
+    QCheckBox *button00;
+    QCheckBox *button02;
     QCheckBox *button05;
+    QCheckBox *button04;
+    QCheckBox *button01;
     QWidget *page;
     QHBoxLayout *horizontalLayout;
     QCheckBox *button10;
@@ -115,24 +115,24 @@ public:
     {
         if (SubWindow->objectName().isEmpty())
             SubWindow->setObjectName(QString::fromUtf8("SubWindow"));
-        SubWindow->resize(737, 531);
+        SubWindow->resize(737, 541);
         SubWindow->setStyleSheet(QString::fromUtf8("QScrollBar:vertical\n"
 "{\n"
-"    margin:30px 0px 30px 0px;\n"
-"    background-color:#0bb4b5;\n"
+"	margin:1px 0 1px 0;\n"
+"    background-color:white;\n"
 "    border: 0px;\n"
-"    width:30px;    \n"
+"    width:15px;    \n"
 "}\n"
 "QScrollBar::handle:vertical\n"
 "{\n"
-"    background-color:#1ca9b3;\n"
-"    width:30px;\n"
+"    background-color:rgba(200,200,200,100);\n"
+"    width:15px;\n"
 "    border-radius:7px;\n"
 "}\n"
 "QScrollBar::handle:vertical:hover\n"
 "{\n"
-"    background-color:#0bb4b5;\n"
-"    width:30px;\n"
+"    background-color:rgb(200,200,200);\n"
+"    width:15px;\n"
 "    border-radius:7px;\n"
 "}\n"
 "QScrollBar::add-line:vertical\n"
@@ -162,9 +162,9 @@ public:
 "  border:0px;\n"
 "  width:30px;\n"
 "  height:30px;\n"
-"  border-image:url(\":/Icons/up_Arrow.png\");\n"
-""
-                        "}\n"
+"  border-image:url(\":/Icons/up_Arrow"
+                        ".png\");\n"
+"}\n"
 "\n"
 "QScrollBar::up-arrow:vertical:pressed\n"
 "{\n"
@@ -191,43 +191,43 @@ public:
         stackedWidget = new QStackedWidget(SubWindow);
         stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
         stackedWidget->setEnabled(true);
-        stackedWidget->setGeometry(QRect(240, 60, 500, 451));
+        stackedWidget->setGeometry(QRect(50, 30, 500, 451));
         stackedWidget->setMinimumSize(QSize(500, 451));
         stackedWidget->setMaximumSize(QSize(741, 451));
         page_7 = new QWidget();
         page_7->setObjectName(QString::fromUtf8("page_7"));
         gridLayout_3 = new QGridLayout(page_7);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
+        button03 = new QCheckBox(page_7);
+        button03->setObjectName(QString::fromUtf8("button03"));
+
+        gridLayout_3->addWidget(button03, 0, 3, 1, 1);
+
         button00 = new QCheckBox(page_7);
         button00->setObjectName(QString::fromUtf8("button00"));
         button00->setStyleSheet(QString::fromUtf8("font: 75 9pt \"Arial\";"));
 
         gridLayout_3->addWidget(button00, 0, 0, 1, 1);
 
-        button01 = new QCheckBox(page_7);
-        button01->setObjectName(QString::fromUtf8("button01"));
-
-        gridLayout_3->addWidget(button01, 0, 1, 1, 1);
-
         button02 = new QCheckBox(page_7);
         button02->setObjectName(QString::fromUtf8("button02"));
 
         gridLayout_3->addWidget(button02, 0, 2, 1, 1);
 
-        button03 = new QCheckBox(page_7);
-        button03->setObjectName(QString::fromUtf8("button03"));
+        button05 = new QCheckBox(page_7);
+        button05->setObjectName(QString::fromUtf8("button05"));
 
-        gridLayout_3->addWidget(button03, 0, 3, 1, 1);
+        gridLayout_3->addWidget(button05, 0, 5, 1, 1);
 
         button04 = new QCheckBox(page_7);
         button04->setObjectName(QString::fromUtf8("button04"));
 
         gridLayout_3->addWidget(button04, 0, 4, 1, 1);
 
-        button05 = new QCheckBox(page_7);
-        button05->setObjectName(QString::fromUtf8("button05"));
+        button01 = new QCheckBox(page_7);
+        button01->setObjectName(QString::fromUtf8("button01"));
 
-        gridLayout_3->addWidget(button05, 0, 5, 1, 1);
+        gridLayout_3->addWidget(button01, 0, 1, 1, 1);
 
         stackedWidget->addWidget(page_7);
         page = new QWidget();
@@ -441,95 +441,128 @@ public:
         stackedWidget->addWidget(page_16);
         scrollArea = new QScrollArea(SubWindow);
         scrollArea->setObjectName(QString::fromUtf8("scrollArea"));
-        scrollArea->setGeometry(QRect(0, 0, 161, 531));
-        scrollArea->setStyleSheet(QString::fromUtf8("background-image: url(:/png/image/subwindow.jpg);"));
+        scrollArea->setGeometry(QRect(580, 0, 161, 541));
+        scrollArea->setStyleSheet(QString::fromUtf8("background-image: url(:/png/image/subwindow.jpg);\n"
+"border:none"));
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, -33, 129, 575));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 161, 541));
         verticalLayout = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         button0 = new QPushButton(scrollAreaWidgetContents);
         button0->setObjectName(QString::fromUtf8("button0"));
+        button0->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(button0);
 
         button1 = new QPushButton(scrollAreaWidgetContents);
         button1->setObjectName(QString::fromUtf8("button1"));
+        button1->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(button1);
 
         button2 = new QPushButton(scrollAreaWidgetContents);
         button2->setObjectName(QString::fromUtf8("button2"));
+        button2->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(button2);
 
         button3 = new QPushButton(scrollAreaWidgetContents);
         button3->setObjectName(QString::fromUtf8("button3"));
+        button3->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(button3);
 
         button4 = new QPushButton(scrollAreaWidgetContents);
         button4->setObjectName(QString::fromUtf8("button4"));
+        button4->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(button4);
 
         button5 = new QPushButton(scrollAreaWidgetContents);
         button5->setObjectName(QString::fromUtf8("button5"));
+        button5->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(button5);
 
         button6 = new QPushButton(scrollAreaWidgetContents);
         button6->setObjectName(QString::fromUtf8("button6"));
+        button6->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(button6);
 
         pushButton_11 = new QPushButton(scrollAreaWidgetContents);
         pushButton_11->setObjectName(QString::fromUtf8("pushButton_11"));
+        pushButton_11->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_11);
 
         pushButton_12 = new QPushButton(scrollAreaWidgetContents);
         pushButton_12->setObjectName(QString::fromUtf8("pushButton_12"));
+        pushButton_12->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_12);
 
         pushButton_13 = new QPushButton(scrollAreaWidgetContents);
         pushButton_13->setObjectName(QString::fromUtf8("pushButton_13"));
+        pushButton_13->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_13);
 
         pushButton_14 = new QPushButton(scrollAreaWidgetContents);
         pushButton_14->setObjectName(QString::fromUtf8("pushButton_14"));
+        pushButton_14->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_14);
 
         pushButton_15 = new QPushButton(scrollAreaWidgetContents);
         pushButton_15->setObjectName(QString::fromUtf8("pushButton_15"));
+        pushButton_15->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_15);
 
         pushButton_16 = new QPushButton(scrollAreaWidgetContents);
         pushButton_16->setObjectName(QString::fromUtf8("pushButton_16"));
+        pushButton_16->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_16);
 
         pushButton_17 = new QPushButton(scrollAreaWidgetContents);
         pushButton_17->setObjectName(QString::fromUtf8("pushButton_17"));
+        pushButton_17->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_17);
 
         pushButton_18 = new QPushButton(scrollAreaWidgetContents);
         pushButton_18->setObjectName(QString::fromUtf8("pushButton_18"));
+        pushButton_18->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_18);
 
         pushButton_19 = new QPushButton(scrollAreaWidgetContents);
         pushButton_19->setObjectName(QString::fromUtf8("pushButton_19"));
+        pushButton_19->setCursor(QCursor(Qt::PointingHandCursor));
 
         verticalLayout->addWidget(pushButton_19);
 
         scrollArea->setWidget(scrollAreaWidgetContents);
+        button0->raise();
+        button2->raise();
+        button3->raise();
+        button4->raise();
+        button5->raise();
+        button6->raise();
+        pushButton_11->raise();
+        pushButton_12->raise();
+        pushButton_13->raise();
+        pushButton_14->raise();
+        pushButton_15->raise();
+        pushButton_16->raise();
+        pushButton_17->raise();
+        pushButton_18->raise();
+        pushButton_19->raise();
+        button1->raise();
 
         retranslateUi(SubWindow);
 
@@ -542,12 +575,12 @@ public:
     void retranslateUi(QDialog *SubWindow)
     {
         SubWindow->setWindowTitle(QCoreApplication::translate("SubWindow", "Dialog", nullptr));
-        button00->setText(QCoreApplication::translate("SubWindow", "\351\207\215\345\272\206", nullptr));
-        button01->setText(QCoreApplication::translate("SubWindow", "\345\214\227\344\272\254", nullptr));
-        button02->setText(QCoreApplication::translate("SubWindow", "\351\246\231\346\270\257", nullptr));
         button03->setText(QCoreApplication::translate("SubWindow", "\344\270\212\346\265\267", nullptr));
-        button04->setText(QCoreApplication::translate("SubWindow", "\346\276\263\351\227\250", nullptr));
+        button00->setText(QCoreApplication::translate("SubWindow", "\351\207\215\345\272\206", nullptr));
+        button02->setText(QCoreApplication::translate("SubWindow", "\351\246\231\346\270\257", nullptr));
         button05->setText(QCoreApplication::translate("SubWindow", "\345\244\251\346\264\245", nullptr));
+        button04->setText(QCoreApplication::translate("SubWindow", "\346\276\263\351\227\250", nullptr));
+        button01->setText(QCoreApplication::translate("SubWindow", "\345\214\227\344\272\254", nullptr));
         button10->setText(QCoreApplication::translate("SubWindow", "\345\205\260\345\267\236", nullptr));
         button11->setText(QCoreApplication::translate("SubWindow", "\347\231\275\351\223\266", nullptr));
         button12->setText(QCoreApplication::translate("SubWindow", "\346\225\246\347\205\214", nullptr));

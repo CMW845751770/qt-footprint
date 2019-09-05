@@ -21,18 +21,18 @@ MainWindow::MainWindow(QWidget *parent) :
     this->setMaximumSize(700,500);
     this->setMinimumSize(700,500);
     b1.setParent(this);
-    b1.setText("退出");
-    b1.move(330,430);
-    b1.resize(50,30);
+    b1.setText("退 出");
+    b1.move(295,430);
+    b1.resize(120,30);
     b1.setStyleSheet(
                 //正常状态样式
                                   "QPushButton{"
                                   "background-color:red;"//背景色（也可以设置图片）
                                   "border-style:outset;"                  //边框样式（inset/outset）
-                                  "border-width:4px;"                     //边框宽度像素
-                                  "border-radius:10px;"                   //边框圆角半径像素
+                                  "border-width:1px;"                     //边框宽度像素
+                                  "border-radius:15px;"                   //边框圆角半径像素
                                   "border-color:rgba(255,255,255,30);"    //边框颜色
-                                  "font:bold 10px;"                       //字体，字体大小
+                                  "font:15px 微软雅黑;"//字体，字体大小
                                   "color:white;"                //字体颜色
                                   "padding:6px;"                          //填衬
                                   "}"
@@ -57,20 +57,20 @@ MainWindow::MainWindow(QWidget *parent) :
     */
 
     b2.setParent(this);
-    b2.setText("开始");
-    b2.move(330,400);
-    b2.resize(50,30);
+    b2.setText("开 始");
+    b2.move(295,395);
+    b2.resize(120,30);
     b2.setStyleSheet(
                 //正常状态样式
                                   "QPushButton{"
                                   "background-color:green;"//背景色（也可以设置图片）
                                   "border-style:outset;"                  //边框样式（inset/outset）
-                                  "border-width:4px;"                     //边框宽度像素
-                                  "border-radius:10px;"                   //边框圆角半径像素
+                                  "border-width:1px;"                     //边框宽度像素
+                                  "border-radius:15px;"                   //边框圆角半径像素
                                   "border-color:rgba(255,255,255,30);"    //边框颜色
-                                  "font:bold 10px;"                       //字体，字体大小
+                                  "font:15px 微软雅黑;"                       //字体，字体大小
                                   "color:white;"                //字体颜色
-                                  "padding:6px;"                          //填衬
+                                  "padding:2px 10px 2px 10px;"                          //填衬
                                   "}"
                                   //鼠标按下样式
                                   "QPushButton:pressed{"

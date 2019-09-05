@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>737</width>
-    <height>531</height>
+    <height>541</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,21 +16,21 @@
   <property name="styleSheet">
    <string notr="true">QScrollBar:vertical
 {
-    margin:30px 0px 30px 0px;
-    background-color:#0bb4b5;
+	margin:1px 0 1px 0;
+    background-color:white;
     border: 0px;
-    width:30px;    
+    width:15px;    
 }
 QScrollBar::handle:vertical
 {
-    background-color:#1ca9b3;
-    width:30px;
+    background-color:rgba(200,200,200,100);
+    width:15px;
     border-radius:7px;
 }
 QScrollBar::handle:vertical:hover
 {
-    background-color:#0bb4b5;
-    width:30px;
+    background-color:rgb(200,200,200);
+    width:15px;
     border-radius:7px;
 }
 QScrollBar::add-line:vertical
@@ -92,8 +92,8 @@ QScrollBar::down-arrow:vertical:pressed
    </property>
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>60</y>
+     <x>50</x>
+     <y>30</y>
      <width>500</width>
      <height>451</height>
     </rect>
@@ -115,6 +115,13 @@ QScrollBar::down-arrow:vertical:pressed
    </property>
    <widget class="QWidget" name="page_7">
     <layout class="QGridLayout" name="gridLayout_3">
+     <item row="0" column="3">
+      <widget class="QCheckBox" name="button03">
+       <property name="text">
+        <string>上海</string>
+       </property>
+      </widget>
+     </item>
      <item row="0" column="0">
       <widget class="QCheckBox" name="button00">
        <property name="styleSheet">
@@ -125,13 +132,6 @@ QScrollBar::down-arrow:vertical:pressed
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
-      <widget class="QCheckBox" name="button01">
-       <property name="text">
-        <string>北京</string>
-       </property>
-      </widget>
-     </item>
      <item row="0" column="2">
       <widget class="QCheckBox" name="button02">
        <property name="text">
@@ -139,10 +139,10 @@ QScrollBar::down-arrow:vertical:pressed
        </property>
       </widget>
      </item>
-     <item row="0" column="3">
-      <widget class="QCheckBox" name="button03">
+     <item row="0" column="5">
+      <widget class="QCheckBox" name="button05">
        <property name="text">
-        <string>上海</string>
+        <string>天津</string>
        </property>
       </widget>
      </item>
@@ -153,10 +153,10 @@ QScrollBar::down-arrow:vertical:pressed
        </property>
       </widget>
      </item>
-     <item row="0" column="5">
-      <widget class="QCheckBox" name="button05">
+     <item row="0" column="1">
+      <widget class="QCheckBox" name="button01">
        <property name="text">
-        <string>天津</string>
+        <string>北京</string>
        </property>
       </widget>
      </item>
@@ -508,14 +508,15 @@ QScrollBar::down-arrow:vertical:pressed
   <widget class="QScrollArea" name="scrollArea">
    <property name="geometry">
     <rect>
-     <x>0</x>
+     <x>580</x>
      <y>0</y>
      <width>161</width>
-     <height>531</height>
+     <height>541</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-image: url(:/png/image/subwindow.jpg);</string>
+    <string notr="true">background-image: url(:/png/image/subwindow.jpg);
+border:none</string>
    </property>
    <property name="widgetResizable">
     <bool>true</bool>
@@ -524,14 +525,17 @@ QScrollBar::down-arrow:vertical:pressed
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>-33</y>
-      <width>129</width>
-      <height>575</height>
+      <y>0</y>
+      <width>161</width>
+      <height>541</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
       <widget class="QPushButton" name="button0">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>热门</string>
        </property>
@@ -539,6 +543,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="button1">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>甘肃</string>
        </property>
@@ -546,6 +553,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="button2">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>河北</string>
        </property>
@@ -553,6 +563,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="button3">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>河南</string>
        </property>
@@ -560,6 +573,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="button4">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>山东</string>
        </property>
@@ -567,6 +583,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="button5">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>江西</string>
        </property>
@@ -574,6 +593,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="button6">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>四川</string>
        </property>
@@ -581,6 +603,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_11">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>江苏</string>
        </property>
@@ -588,6 +613,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_12">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>浙江</string>
        </property>
@@ -595,6 +623,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_13">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>安徽</string>
        </property>
@@ -602,6 +633,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_14">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>黑龙江</string>
        </property>
@@ -609,6 +643,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_15">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>吉林</string>
        </property>
@@ -616,6 +653,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_16">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>辽宁</string>
        </property>
@@ -623,6 +663,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_17">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>内蒙古</string>
        </property>
@@ -630,6 +673,9 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_18">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>新疆</string>
        </property>
@@ -637,12 +683,31 @@ QScrollBar::down-arrow:vertical:pressed
      </item>
      <item>
       <widget class="QPushButton" name="pushButton_19">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
         <string>福建</string>
        </property>
       </widget>
      </item>
     </layout>
+    <zorder>button0</zorder>
+    <zorder>button2</zorder>
+    <zorder>button3</zorder>
+    <zorder>button4</zorder>
+    <zorder>button5</zorder>
+    <zorder>button6</zorder>
+    <zorder>pushButton_11</zorder>
+    <zorder>pushButton_12</zorder>
+    <zorder>pushButton_13</zorder>
+    <zorder>pushButton_14</zorder>
+    <zorder>pushButton_15</zorder>
+    <zorder>pushButton_16</zorder>
+    <zorder>pushButton_17</zorder>
+    <zorder>pushButton_18</zorder>
+    <zorder>pushButton_19</zorder>
+    <zorder>button1</zorder>
    </widget>
   </widget>
  </widget>

@@ -55,7 +55,7 @@
   <widget class="QLabel" name="label_xg">
    <property name="geometry">
     <rect>
-     <x>840</x>
+     <x>820</x>
      <y>730</y>
      <width>54</width>
      <height>12</height>
@@ -107,10 +107,10 @@
   <widget class="QLabel" name="label_am">
    <property name="geometry">
     <rect>
-     <x>850</x>
-     <y>720</y>
-     <width>54</width>
-     <height>12</height>
+     <x>800</x>
+     <y>750</y>
+     <width>51</width>
+     <height>16</height>
     </rect>
    </property>
    <property name="text">

@@ -103,7 +103,7 @@ public:
         label_bj->setGeometry(QRect(840, 320, 51, 16));
         label_xg = new QLabel(LastWindow);
         label_xg->setObjectName(QString::fromUtf8("label_xg"));
-        label_xg->setGeometry(QRect(840, 730, 54, 12));
+        label_xg->setGeometry(QRect(820, 730, 54, 12));
         label_sh = new QLabel(LastWindow);
         label_sh->setObjectName(QString::fromUtf8("label_sh"));
         label_sh->setGeometry(QRect(905, 515, 51, 21));
@@ -115,7 +115,7 @@ public:
         label_lz->setGeometry(QRect(600, 410, 51, 16));
         label_am = new QLabel(LastWindow);
         label_am->setObjectName(QString::fromUtf8("label_am"));
-        label_am->setGeometry(QRect(850, 720, 54, 12));
+        label_am->setGeometry(QRect(800, 750, 51, 16));
         label_by = new QLabel(LastWindow);
         label_by->setObjectName(QString::fromUtf8("label_by"));
         label_by->setGeometry(QRect(640, 440, 51, 16));

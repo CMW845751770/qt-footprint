@@ -1300,7 +1300,7 @@ SubWindow::SubWindow(QWidget *parent) :
     b.setText("选择完成");
 
     b.resize(80,30);
-    b.move(550,20);
+    b.move(80,20);
     connect(&b,&QPushButton::released,this,&SubWindow::changeWin);
     connect(&l,&LastWindow::mySignal1,this,&SubWindow::dealLast);
 }
@@ -1308,7 +1308,7 @@ void SubWindow::paintEvent(QPaintEvent *)
 {
     QPainter p;//创建画家对象
     p.begin(this);//指定当前窗口为绘图设备
-    p.drawPixmap(0,0,width(),height(),QPixmap(":/png/image/subwindow.png"));//画背景图
+    p.drawPixmap(-100,0,width(),height(),QPixmap(":/png/image/subwindow.png"));//画背景图
     p.end();
 }
 SubWindow::~SubWindow()
