@@ -3,7 +3,10 @@
 
 #include <QDate>
 #include <QString>
-
+/**
+  用户表对应的pojo
+ * @brief The User class
+ */
 class User{
     private:
         int id ;
