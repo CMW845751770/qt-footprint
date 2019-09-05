@@ -130,39 +130,24 @@ void MainWindow::changeWin(){
         QMessageBox::information(NULL,"亲","密码不能为空哦！") ;
         return;
     }
-    //判断用户名是否存在
     QSqlQuery query;
-       //执行sql
-    query.prepare("select count(1) from footprint_user where username = ?") ;
-    query.addBindValue(username) ;
-    query.exec() ;
-    int usernameResultCount = 0;
-    while(query.next()){
-        usernameResultCount = query.value(0).toInt() ;
-    }
-    qDebug()<<usernameResultCount<<endl ;
-    if(!(usernameResultCount > 0)){
-        QMessageBox::information(NULL,"亲","用户名是不是输错了？") ;
-        return;
-    }
-    QSqlQuery query2;
     //根据用户名和密码查询用户
-    query2.prepare("select id,username,password,city_count as cityCount, create_time as createTime ,update_time as updateTime from footprint_user where username = ? and password = ?") ;
-    query2.addBindValue(username) ;
-    query2.addBindValue(password) ;
-    query2.exec() ;
-    while(query2.next()){
+    query.prepare("select id,username,password,city_count as cityCount, create_time as createTime ,update_time as updateTime from footprint_user where username = ? and password = ?") ;
+    query.addBindValue(username) ;
+    query.addBindValue(password) ;
+    query.exec() ;
+    while(query.next()){
         user = new User() ;
-        user->setId(query2.value(0).toInt()) ;
-        user->setUsername(query2.value(1).toString()) ;
-        user->setPassword(query2.value(2).toString()) ;
-        user->setCityCount(query2.value(3).toInt()) ;
-        user->setCreateTime(query2.value(4).toDateTime()) ;
-        user->setUpdateTime(query2.value(5).toDateTime()) ;
+        user->setId(query.value(0).toInt()) ;
+        user->setUsername(query.value(1).toString()) ;
+        user->setPassword(query.value(2).toString()) ;
+        user->setCityCount(query.value(3).toInt()) ;
+        user->setCreateTime(query.value(4).toDateTime()) ;
+        user->setUpdateTime(query.value(5).toDateTime()) ;
     }
     qDebug()<<user<<endl ;
     if(user == NULL){
-        QMessageBox::information(NULL,"抱歉","密码错误") ;
+        QMessageBox::information(NULL,"抱歉","用户名密码错误") ;
         return;
     }
     qDebug()<<"id :" <<user->getId()<<"username : "<<user->getUsername()<<"password : "<<user->getPassword()
